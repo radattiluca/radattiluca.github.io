@@ -15,15 +15,21 @@ body{
     font-family: $font-style;
     line-height: 1.6;
     font-size: 18px;
+    text-transform: capitalize; //for the first capital letter
     
 }
 
 .navbar{
-    display: grid;
-    grid-template-columns: auto auto;
-    max-width: 1320px;
-    background-color: #a02713;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+      
+    width: 100%;
+    padding: 20px;
 }
+    li{
+        list-style-type: none;
+    }
 
 .logo-name{
     display: flex;
@@ -31,9 +37,56 @@ body{
     font-weight: 700;
 }
 
-.navigation{
+.dropdown:hover .item-menu{
     display: flex;
-    font-size: 2em;
-    justify-content: space-between;
+    flex-direction: column;
+    background: #B2D6FF;
+    border-radius: 5px;
+    padding-top: 60px;
+    position: absolute;  
+    top: -25px;
+    left: -100px;
+    z-index: 1;
+
+
 }
 
+.item-menu{
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    font-size: 0.8em;
+    list-style-type: none;
+    align-items: end;
+}
+
+.item-menu li{
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    font-size: 0.8em;
+    padding: 0 40px 10px 20px;
+    margin: 10px;
+}
+    li:last-of-type{
+        border-bottom: none;
+    }
+
+a:link,
+a:visited {
+  color: $color-dark;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.dropdown{
+    position: relative;
+}
+    span{
+        z-index: 2;
+        position: relative; 
+        cursor: pointer;
+    }

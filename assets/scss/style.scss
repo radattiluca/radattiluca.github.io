@@ -32,5 +32,8 @@ body{
 }
 
 .navigation{
-    font-size: 0.8em;
+    display: flex;
+    font-size: 2em;
+    justify-content: space-between;
 }
+

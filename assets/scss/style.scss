@@ -14,5 +14,23 @@ body{
     background-color: $color-primary;
     font-family: $font-style;
     line-height: 1.6;
+    font-size: 18px;
     
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1320px;
+    background-color: #a02713;
+}
+
+.logo-name{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    font-weight: 700;
+}
+
+.navigation{
+    font-size: 0.8em;
 }

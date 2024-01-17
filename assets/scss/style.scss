@@ -35,6 +35,7 @@ body{
     display: flex;
     padding: 10px 10px 10px 10px;
     font-weight: 700;
+    font-size: 1em;
 }
 
 .dropdown:hover .item-menu{
@@ -44,11 +45,10 @@ body{
     border-radius: 5px;
     padding-top: 60px;
     position: absolute;  
-    top: -25px;
+    top: 30px;
     left: -100px;
     z-index: 1;
-
-
+    
 }
 
 .item-menu{
@@ -66,8 +66,10 @@ body{
     list-style: none;
     border-bottom: 1px solid #FFF;
     font-size: 0.8em;
-    padding: 0 40px 10px 20px;
+    padding: 0 5px 10px 40px;
     margin: 10px;
+    text-align: right;
+  
 }
     li:last-of-type{
         border-bottom: none;

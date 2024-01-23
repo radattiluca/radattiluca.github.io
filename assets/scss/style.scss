@@ -75,7 +75,7 @@ body{
     padding-top: 10px;
     position: absolute;  
     top: 50px;
-    left: 105px;
+    left: -40px;
     z-index: 1;
     
 }
@@ -85,6 +85,7 @@ body{
 }
 
 .navigation{
+   justify-content: center;
     display: flex;
     font-size: 0.8em;
     margin-top: 20px;
@@ -122,15 +123,15 @@ a:hover {
         z-index: 2;
         position: relative; 
         cursor: pointer;
-        left: 140px;
+        left: 0;
         animation-name: example;
         animation-iteration-count: infinite;
         animation-duration: 1.5s;
     }
     @keyframes example {
-        0%   {left:140px; top:0px;}
-        25%  {left:140px; top:0px;}
-        50%  {left:140px; top:10px;}
-        75%  {left:140px; top:10px;}
-        100% {left:140px; top:0px;}
+        0%   {left:0px; top:0px;}
+        25%  {left:0px; top:0px;}
+        50%  {left:0px; top:10px;}
+        75%  {left:0px; top:10px;}
+        100% {left:0px; top:0px;}
       }

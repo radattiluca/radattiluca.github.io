@@ -21,5 +21,3 @@ Creare lo stile del portfolio
 
 10 menu sticky fruibile sia da web sia da mobile
 
-
-background: repeating-linear-gradient(to top, $color-primary 0%, $color-dark 100%);

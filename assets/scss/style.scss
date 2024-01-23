@@ -2,6 +2,7 @@ $color-primary:#70977f;
 $color-secondary:#4c7b92;
 $color-dark:#2c4751;
 $color-light:#a02713;
+$color-darkdark:#462e1b;
 $font-style: Roboto, sans-serif;
 
 *{
@@ -11,12 +12,13 @@ $font-style: Roboto, sans-serif;
 }
 
 body{
-    height: 600px; //to operate the gradiant function
+    height: 1000px; //to operate the gradiant function
     font-family: $font-style;
     line-height: 1.6;
     font-size: 18px;
     text-transform: capitalize; //for the first capital letter
     background: repeating-linear-gradient(to bottom left, $color-primary 0%, $color-dark 100%);
+   
     
 }
 
@@ -35,6 +37,7 @@ body{
         width: 30px;
         fill: $color-dark;
         border-radius: 5px;
+        
     }
 
 
@@ -59,7 +62,7 @@ body{
 
 .name{
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-top: 100px;
     font-style: italic;
     color: $color-dark;
@@ -70,12 +73,12 @@ body{
 .dropdown:hover .item-menu{
     display: flex;
     flex-direction: column;
-    background: $color-secondary;
+    text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
     border-radius: 5px;
     padding-top: 10px;
     position: absolute;  
     top: 50px;
-    left: -40px;
+    left: -35px;
     z-index: 1;
     
 }
@@ -90,22 +93,20 @@ body{
     font-size: 0.8em;
     margin-top: 20px;
     list-style-type: none;
-   
 }
+
 
 .item-menu li{
     list-style: none;
-    border-bottom: 1px solid $color-primary;
+    border-bottom: 1px solid $color-light;
     font-size: 0.8em;
     padding: 0 20px 10px 20px;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
     font-weight: 700;
   
 }
-    li:last-of-type{
-        border-bottom: none;
-    }
+
 
 a:link,
 a:visited {
@@ -135,3 +136,8 @@ a:hover {
         75%  {left:0px; top:10px;}
         100% {left:0px; top:0px;}
       }
+
+.section-name{
+    width: 100%;
+    align-items: center;
+}

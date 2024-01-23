@@ -1,4 +1,5 @@
 $color-primary:#70977f;
+
 $color-secondary:#4c7b92;
 $color-dark:#2c4751;
 $color-light:#a02713;
@@ -11,11 +12,13 @@ $font-style: Roboto, sans-serif;
 }
 
 body{
-    background-color: $color-primary;
+    display: flex;
+    height: 2000px; //to operate the gradiant function
     font-family: $font-style;
     line-height: 1.6;
     font-size: 18px;
     text-transform: capitalize; //for the first capital letter
+    background: repeating-linear-gradient(to top, $color-primary 0%, $color-dark 100%);
     
 }
 
@@ -23,7 +26,6 @@ body{
     position: fixed;
     display: flex;
     justify-content: space-between;
-      
     width: 100%;
     padding: 20px;
 }

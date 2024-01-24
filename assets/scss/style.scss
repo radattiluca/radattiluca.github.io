@@ -31,8 +31,10 @@
     display: flex;
     justify-content:space-between;
     width: 100%;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 30px 5px 10px;
     top: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: $color-primary;
 }
     li{
         list-style-type: none;
@@ -56,6 +58,35 @@
     text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
     flex-wrap: wrap;
 }
+
+.column-image-profile {
+    float: left;
+    width: 100%;
+    padding: 70px 70px 20px 70px;
+    margin-top: 50px;
+    
+}
+    img{
+        border-radius: 20px;
+    }
+
+    p{
+        font-size: 0.8em;
+        padding: 10px 35px 10px 35px;
+        text-transform: none;
+    }
+
+    h1{
+        padding: 10px 35px 10px 35px;
+        text-align: center;
+    }
+
+.row-image-profile{
+    clear: both;
+    display: table;
+    
+}
+
 
 
 

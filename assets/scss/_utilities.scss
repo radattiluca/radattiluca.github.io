@@ -1,5 +1,5 @@
 body{
-    height: 1000px; //to operate the gradiant function
+    height: 2000px; //to operate the gradiant function
     font-family: $font-style;
     line-height: 1.6;
     font-size: 18px;
@@ -9,6 +9,7 @@ body{
     
 }
 
+//start navbar first page
 .dropdown:hover .item-menu{
     display: flex;
     flex-direction: column;
@@ -75,8 +76,9 @@ a:hover {
         75%  {left:0px; top:10px;}
         100% {left:0px; top:0px;}
       }
+      //end navbar first page
 
-
+      //start navbar other pages
       .dropdown-otherpg:hover .item-menu-otherpg{
         display: flex;
         flex-direction: column;
@@ -84,9 +86,11 @@ a:hover {
         border-radius: 5px;
         padding-top: 10px;
         position: absolute;  
-        top: 30px;
-        left: -25px;
+        top: 50px;
+        left: -45px;
         z-index: 1;
+        background-color: $color-primary;
+        border: 1px solid $color-dark;
         
     }
     
@@ -105,8 +109,8 @@ a:hover {
     
     .item-menu-otherpg li{
         list-style: none;
-        border-bottom: 1px solid $color-light;
-        font-size: 0.5em;
+        border-bottom: 1px solid $color-secondary;
+        font-size: 0.8em;
         padding: 0 20px 10px 20px;
         margin: 5px;
         text-align: center;
@@ -143,4 +147,5 @@ a:hover {
             75%  {left:0px; top:10px;}
             100% {left:0px; top:0px;}
           }
+          //end navbar other pages
     

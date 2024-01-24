@@ -8,3 +8,70 @@ body{
    
     
 }
+
+.dropdown:hover .item-menu{
+    display: flex;
+    flex-direction: column;
+    text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
+    border-radius: 5px;
+    padding-top: 10px;
+    position: absolute;  
+    top: 50px;
+    left: -35px;
+    z-index: 1;
+    
+}
+
+.item-menu{
+    display: none;
+}
+
+.navigation{
+   justify-content: center;
+    display: flex;
+    font-size: 0.8em;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+
+.item-menu li{
+    list-style: none;
+    border-bottom: 1px solid $color-light;
+    font-size: 0.8em;
+    padding: 0 20px 10px 20px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 700;
+  
+}
+
+
+a:link,
+a:visited {
+  color: $color-dark;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.dropdown{
+    position: relative;
+}
+    span{
+        z-index: 2;
+        position: relative; 
+        cursor: pointer;
+        left: 0;
+        animation-name: example;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+    }
+    @keyframes example {
+        0%   {left:0px; top:0px;}  
+        25%  {left:0px; top:0px;}
+        50%  {left:0px; top:10px;}
+        75%  {left:0px; top:10px;}
+        100% {left:0px; top:0px;}
+      }

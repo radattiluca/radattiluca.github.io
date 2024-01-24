@@ -1,0 +1,10 @@
+body{
+    height: 1000px; //to operate the gradiant function
+    font-family: $font-style;
+    line-height: 1.6;
+    font-size: 18px;
+    text-transform: capitalize; //for the first capital letter
+    background: repeating-linear-gradient(to bottom left, $color-primary 0%, $color-dark 100%);
+   
+    
+}

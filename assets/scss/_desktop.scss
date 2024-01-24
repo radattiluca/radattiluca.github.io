@@ -6,7 +6,18 @@
         font-size: 18px;
         text-transform: capitalize; //for the first capital letter
         background: repeating-linear-gradient(to bottom left, $color-primary 0%, $color-dark 100%);
-       
-        
+       }
+
+       .navbar{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 1320px;
+        padding: 10px 20px 10px 20px;
+        top: 0;
     }
+        li{
+            list-style-type: none;
+        }
+    
 }

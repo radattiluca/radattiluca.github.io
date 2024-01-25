@@ -7,85 +7,22 @@ Creare lo stile del portfolio
 
 3 Una foto di te e/o immagini dei tuoi progetti
 
-4 Link ai tuoi profili social
+4 Link ai tuoi profili social ok
 
 5 Link ai tuoi lavori se disponibili
 
-6 Link al tuo GitHub
+6 Link al tuo GitHub ok
 
 7 Le tue skill (anche solo HTML e CSS)
 
 8 Un modo facile per contattarti: per esempio, un form
 
-9 implementa i tag “Open Graph” per aumentare la visibilità dei contenuti che desideri condividere.
+9 implementa i tag “Open Graph” per aumentare la visibilità dei contenuti che desideri condividere. 
 
-10 menu sticky fruibile sia da web sia da mobile
-
-
-
-.dropdown:hover .item-menu{
-    display: flex;
-    flex-direction: column;
-    text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
-    border-radius: 5px;
-    padding-top: 10px;
-    position: absolute;  
-    top: 50px;
-    left: -35px;
-    z-index: 1;
-    
-}
-
-.item-menu{
-    display: none;
-}
-
-.navigation{
-   justify-content: center;
-    display: flex;
-    font-size: 0.8em;
-    margin-top: 20px;
-    list-style-type: none;
-}
+10 menu sticky fruibile sia da web sia da mobile.
 
 
-.item-menu li{
-    list-style: none;
-    border-bottom: 1px solid $color-light;
-    font-size: 0.8em;
-    padding: 0 20px 10px 20px;
-    margin: 5px;
-    text-align: center;
-    font-weight: 700;
-  
-}
+finire il modulo, ho copiato solo la roba che mi serviva dagli esercizi del master, controllare se il css è giusto e customizzarlo.
 
 
-a:link,
-a:visited {
-  color: $color-dark;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
 
-.dropdown{
-    position: relative;
-}
-    span{
-        z-index: 2;
-        position: relative; 
-        cursor: pointer;
-        left: 0;
-        animation-name: example;
-        animation-iteration-count: infinite;
-        animation-duration: 1.5s;
-    }
-    @keyframes example {
-        0%   {left:0px; top:0px;}  
-        25%  {left:0px; top:0px;}
-        50%  {left:0px; top:10px;}
-        75%  {left:0px; top:10px;}
-        100% {left:0px; top:0px;}
-      }

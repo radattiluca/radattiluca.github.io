@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import 'button';
 
 *{
     box-sizing: border-box;
@@ -88,7 +89,14 @@
     
 }
 
+.button-ct{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0 15px 0;
+}
 
 
 
-      @import 'desktop';
+    @import 'tablet';
+    @import 'desktop';

@@ -54,7 +54,7 @@
 .name-firstpg{
     text-align: center;
     font-size: 1.5em;
-    margin-top: 120px;
+    margin-top: 90px;
     font-style: italic;
     color: $color-dark;
     text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
@@ -66,29 +66,31 @@
     width: 100%;
     padding: 70px 70px 20px 70px;
     margin-top: 50px;
-    
-}
-    img{
-        border-radius: 20px;
-    }
-
-    p{
-        font-size: 0.8em;
-        padding: 10px 35px 10px 35px;
-        text-transform: none;
-    }
-
-    h1{
-        padding: 10px 35px 10px 35px;
-        text-align: center;
-        text-transform: none;
-    }
+}   
 
 .row-image-profile{
     clear: both;
     display: table;
-    
+
+        img{
+            border-radius: 20px;
+        }
+
+        p{
+            font-size: 0.8em;
+            padding: 10px 35px 10px 35px;
+            text-transform: none;
+        }
+
+        h1{
+            padding: 10px 35px 10px 35px;
+            text-align: left;
+            text-transform: none;
+            font-size: 1.3em;
+            margin-bottom: 0;
+        }
 }
+
 
 .button-ct{
     display: flex;

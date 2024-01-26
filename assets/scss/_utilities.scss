@@ -23,6 +23,17 @@ body{
 
 .item-menu{
     display: none;
+
+    li{
+        list-style: none;
+        border-bottom: 1px solid $color-light;
+        font-size: 0.8em;
+        padding: 0 20px 10px 20px;
+        margin: 5px;
+        text-align: center;
+        font-weight: 700;
+      
+    }
 }
 
 .navigation{
@@ -31,18 +42,6 @@ body{
     font-size: 0.8em;
     margin-top: 20px;
     list-style-type: none;
-}
-
-
-.item-menu li{
-    list-style: none;
-    border-bottom: 1px solid $color-light;
-    font-size: 0.8em;
-    padding: 0 20px 10px 20px;
-    margin: 5px;
-    text-align: center;
-    font-weight: 700;
-  
 }
 
 
@@ -57,14 +56,14 @@ a:hover {
 
 .dropdown{
     position: relative;
-}
+
     span{
         z-index: 2;
         position: relative; 
         cursor: pointer;
         left: 0;
         animation-name: example;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 3;
         animation-duration: 1.5s;
     }
     @keyframes example {
@@ -74,6 +73,7 @@ a:hover {
         75%  {left:0px; top:10px;}
         100% {left:0px; top:0px;}
       }
+    }
       //end navbar first page
 
       //start navbar other pages
@@ -127,14 +127,14 @@ a:hover {
     
     .dropdown-otherpg{
         position: relative;
-    }
+    
         span{
             z-index: 2;
             position: relative; 
             cursor: pointer;
             left: 0;
             animation-name: example;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 3;
             animation-duration: 1.5s;
         }
         @keyframes example {
@@ -144,6 +144,7 @@ a:hover {
             75%  {left:0px; top:10px;}
             100% {left:0px; top:0px;}
           }
+    }
           //end navbar other pages
     
 

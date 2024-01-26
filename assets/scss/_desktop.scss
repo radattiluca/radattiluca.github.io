@@ -23,4 +23,34 @@
     .column-image-profile img{
         max-width: 50%;
     }
+
+    .contactme-form-header,
+    .form-contactme {
+        width: 600px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start; //To avoid stretching
+        margin-bottom: 20px;
+
+        input[type='text'],
+        input[type='email'],
+        textarea {
+            width: 250px;
+            height: initial;
+        }
+         label {
+            text-align: right;
+            width: 120px;
+            margin-top: 7px;
+            padding-right: 20px;
+        }
+
+
+        .button-one {
+            margin-left: 120px;
+          }
+    }
+     
+      
 }

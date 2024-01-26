@@ -40,13 +40,31 @@
           </div>
         </nav>
     </header>
-
+    <!--start section form-->
    <section class="form-contactme">
     <header class='contactme-form-header'>
       <h1>Contact me</h1>
-      <p><em>Get in touch or shoot me an email directly on webdev@gmail.com</em></p>
     </header>
-    <form action="" method="get" class="contactme-form">
+    
+    <form action="https://formsubmit.co/ lucaradatti.dev@gmail.com" method="post" class="contactme-form">
+      <div class='form-row'>
+        <label for='full-name'>Name</label>
+        <input id='full-name' name='full-name' type='text' placeholder='enter your full name' required/>
+      </div>
+
+      <div class='form-row'>
+        <label for='email'>Email</label>
+        <input id='email' name='email' type='email' placeholder='youremail@example.com' required/>
+      </div>
+
+      <div class='form-row'>
+        <label for='abstract'>Abstract</label>
+        <textarea id='abstract' name='abstract' placeholder='Message' required></textarea>
+      </div>
+
+      <div class='form-row'>
+        <button class="button-one">Submit</button>
+      </div>
 
     </form>
    </section>

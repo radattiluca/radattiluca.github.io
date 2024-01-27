@@ -5,8 +5,11 @@ body{
     font-size: 18px;
     text-transform: capitalize; //for the first capital letter
     background: repeating-linear-gradient(to bottom left, $color-primary 0%, $color-dark 100%);
-}
 
+      a{
+        color: aliceblue; //cambia solo il link del nome nella navbar
+      }
+}
 
 //start navbar first page
 .dropdown:hover .item-menu{
@@ -42,13 +45,15 @@ body{
     display: flex;
     font-size: 0.8em;
     margin-top: 20px;
-    list-style-type: none;
+    
+    li{
+      list-style-type: none;
+  }
 }
 
 
 a:link,
 a:visited {
-  color: $color-dark;
   text-decoration: none;
 }
 a:hover {
@@ -116,10 +121,8 @@ a:hover {
       
     }
     
-    
     a:link,
     a:visited {
-      color: $color-dark;
       text-decoration: none;
     }
     a:hover {

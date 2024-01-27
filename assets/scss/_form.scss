@@ -9,12 +9,12 @@
   text-align: left;
   border-radius: 3px;
   width: 100%;
-  margin: 80px 0 10px 0;
+  margin-top: 80px;
   padding: 20px;
 
   h1 {
   font-size: 30px;
-  margin-bottom: 20px;
+  
   }
 }
 
@@ -37,7 +37,7 @@
   }
   
    label {
-    margin-bottom: 15px;
+    margin: 15px 0 15px 0;
   }
 
    input[type='text']:invalid,
@@ -52,6 +52,7 @@
     background-color: $color-primary;
     border-radius: 3px;
     min-height: 200px;
+    width: 250px;
     margin-bottom: 10px;
     padding: 7px;
     resize: none; //disabled user resizing

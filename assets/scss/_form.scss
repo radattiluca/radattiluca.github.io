@@ -26,6 +26,7 @@
   flex-wrap: wrap;
   padding-left: 20px;
 
+
   input[type='text'],
   input[type='email'] {
     background-color: $color-primary;
@@ -33,7 +34,7 @@
     border-radius: 3px;
     width: 100%;
     padding: 7px;
-    font-size: 14px;
+    font-size: 0.8em;
   }
   
    label {
@@ -56,6 +57,8 @@
     margin-bottom: 10px;
     padding: 7px;
     resize: none; //disabled user resizing
+    font-family: inherit;
+    font-size: 0.8em;
   }
 
   input[type='submit']{ //to use the customization of the button text

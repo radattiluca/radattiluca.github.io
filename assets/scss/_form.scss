@@ -58,5 +58,9 @@
     resize: none; //disabled user resizing
   }
 
+  input[type='submit']{ //to use the customization of the button text
+    color: $color-dark;
+  }
+
 }
 

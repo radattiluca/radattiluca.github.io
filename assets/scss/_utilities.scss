@@ -4,7 +4,7 @@ body{
     line-height: 1.6;
     font-size: 18px;
     text-transform: capitalize; //for the first capital letter
-    background: no-repeat linear-gradient(to bottom left, $color-primary 0%, $color-dark 100%);
+    background: whitesmoke;
 
       a{
         color: $color-dark; //cambia solo il link del nome nella navbar
@@ -45,6 +45,9 @@ body{
     display: flex;
     font-size: 0.8em;
     margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    top: 0;
     
     li{
       list-style-type: none;

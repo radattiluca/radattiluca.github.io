@@ -12,7 +12,6 @@
 .grid-logo{
     display: grid;
     grid-template-columns: 40px 40px 40px;
-    
 }
 
 .item-logo{
@@ -21,7 +20,8 @@
     padding-left: 10px;
 }
     svg{
-        width: 30px;
+        width: 40px;
+        height: 30px;
         fill: $color-dark;
         border-radius: 5px;
         
@@ -36,7 +36,7 @@
     padding: 10px 30px 5px 10px;
     top: 0;
     border-radius: 0 0 5px 5px;
-    background-color: $color-primary;
+    background-color: $bg-color;
 
     li{
         list-style-type: none;
@@ -52,7 +52,6 @@
     flex-wrap: wrap;
 }
 
-
 .name-firstpg{
     text-align: center;
     font-size: 1.5em;
@@ -61,6 +60,7 @@
     color: $color-dark;
     text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
     flex-wrap: wrap;
+
 }
 
 .column-image-profile {

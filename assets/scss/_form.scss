@@ -1,25 +1,32 @@
-.form-contactme {
+.column-form {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
 
-.contactme-form-header {
+.row-header-form {
   text-align: left;
   border-radius: 3px;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 63px;
   padding: 20px;
+  box-shadow:inset 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
-  h1 {
-  font-size: 30px;
-  
-  }
+    h1 {
+    font-size: 30px;
+    }
 }
 
-.form-row {
+.row-form{
+  width: 100%;
+  background-color: $color-pred-trasp;
+  box-shadow:inset 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.item-row {
   margin-bottom: 5px;
+  max-width: 250px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -29,7 +36,7 @@
 
   input[type='text'],
   input[type='email'] {
-    background-color: $color-primary;
+    background-color: $color-pred;
     border: 1px solid $color-dark;
     border-radius: 3px;
     width: 100%;
@@ -50,10 +57,10 @@
 
   textarea {
     border: 1px solid $color-dark;
-    background-color: $color-primary;
+    background-color: $color-pred;
     border-radius: 3px;
     min-height: 200px;
-    width: 250px;
+    width: 230px;
     margin-bottom: 10px;
     padding: 7px;
     resize: none; //disabled user resizing

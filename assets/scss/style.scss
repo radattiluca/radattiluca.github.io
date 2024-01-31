@@ -175,6 +175,23 @@
     background-color: $color-pred-trasp;
   }
 
+  .column-footer{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    color: $color-dark;
+    background-color: $color-pred-trasp;
+  }
+
+  .about{
+    background-color: $color-link;
+  }
+
+  .row-footer{
+    display: flex;
+    justify-content: center;
+    
+}
 
     @import 'tablet';
     @import 'desktop';

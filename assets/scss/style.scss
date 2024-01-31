@@ -51,13 +51,20 @@
     flex-wrap: wrap;
 }
 
-.name-firstpg{
+.column-firstpage{
+    margin:50px 15px 30px 15px;
+    padding: 40px 0 40px 0;
+    background-color: $color-pred-trasp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-name-firstpg{
     text-align: center;
-    font-size: 1.5em;
-    margin-top: 90px;
+    font-size: 1.2em;
     font-style: italic;
     color: $color-pred;
-    text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
     flex-wrap: wrap;
 
     h5, h3{
@@ -74,7 +81,6 @@
     color: $color-dark;
 
         img{
-            border-radius: 20px;
             border: 2px solid $color-pred;
         }
 
@@ -87,21 +93,21 @@
             text-align: center;
             text-transform: none;
             font-size: 1.2em;
-            padding: 20px 0 20px 0;
+            padding: 10px 0 20px 0;
 
         }
 }
 
 .row-image-profile {
     width: 100%;
-    padding: 70px 70px 70px 70px;
+    padding: 20px 70px 10px 70px;
     box-shadow:inset 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 } 
 
 .row-text-profile {
     text-align: left;
     width: 100%;
-    padding: 30px 30px 30px 30px;
+    padding: 0 30px 30px 30px;
     background-color: $color-pred-trasp;
     box-shadow:inset 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 } 
@@ -130,6 +136,30 @@
     flex-wrap: wrap;
 }
 
+.column-cards{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 60px;
+    color: $color-dark;
+}
+
+.row-cards{
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
 
 
     @import 'tablet';

@@ -4,10 +4,10 @@ body{
     line-height: 1.6;
     font-size: 18px;
     text-transform: capitalize; //for the first capital letter
-    background-color: #d9dee0;
+    background-color: $color-link;
 
       a{
-        color: #d4d6d8; //cambia solo i link 
+        color: $color-link; //cambia solo i link 
       }
 }
 
@@ -31,7 +31,7 @@ body{
 
     li{
       list-style: none;
-      border-bottom: 1px dotted;
+      border-bottom: 1px dotted $color-primary;
       font-size: 0.8em;
       padding: 0 5px 10px 5px;
       margin: 5px;
@@ -121,7 +121,7 @@ a:hover {
     
     .item-menu-otherpg li{
         list-style: none;
-        border-bottom: 1px dotted;
+        border-bottom: 1px dotted $color-primary;
         font-size: 0.8em;
         padding: 0 5px 10px 5px;
         margin: 5px;
@@ -161,4 +161,10 @@ a:hover {
           //end navbar other pages
     
 
+.arrow-back-up{
+  position: fixed;
+  z-index: 1000;
+  bottom: 2px;
+  right: 2px;
+}
     

@@ -70,40 +70,37 @@
        padding: 20px;
        
     }
-    
-    .contactme-form-header,
-    .form-contactme {
-        width: 600px;
-    }
-    .form-row {
-        flex-direction: row;
-        align-items: flex-start; //To avoid stretching
-        margin-bottom: 20px;
+    .button-one {
+        margin-left: 120px;
+      }
 
-        input[type='text'],
-        input[type='email'],
-        textarea {
-            width: 250px;
-            height: initial;
-        }
-         label {
-            text-align: right;
-            width: 120px;
-            margin-top: 7px;
-            padding-right: 20px;
-        }
-
-
-        .button-one {
-            margin-left: 120px;
-          }
-    }
 
     .column-cards{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         margin: 100px 0 30px 0;
         color: $color-dark;
         row-gap: 20px;
     }
+
+    .contactme-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        align-items: end;
+    
+    }
+
+    .button-one{
+        margin: 0;
+    }
+
+    textarea{
+        min-width: 500px;
+    }
+    
 }
+
+    
+
+   

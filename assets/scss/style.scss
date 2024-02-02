@@ -163,10 +163,10 @@
     width: 70%;
     border: 3px solid $color-link;
     color: $color-pred;
-    
-  }
+}
   
   .card:hover {
+    cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
@@ -176,22 +176,17 @@
   }
 
   .column-footer{
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
     padding: 20px;
+    justify-content: center;
     color: $color-dark;
     background-color: $color-pred-trasp;
   }
 
-  .about{
+.about{
     background-color: $color-link;
-  }
-
-  .row-footer{
-    display: flex;
-    justify-content: center;
-    
 }
+
 
     @import 'tablet';
     @import 'desktop';

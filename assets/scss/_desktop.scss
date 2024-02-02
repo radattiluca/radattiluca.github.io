@@ -1,15 +1,17 @@
 @media only screen and (min-width:961px){
     body{
         font-family: $font-style;
-        width: 100%;
+        max-width: 1440px;
         line-height: 1.6;
         font-size: 18px;
         text-transform: capitalize; //for the first capital letter
+        margin:auto ;
        }
 
        .navbar{
         position: fixed;
         display: flex;
+        max-width: 1440px;
         justify-content: space-between;
         padding: 10px 20px 10px 20px;
         top: 0;
@@ -18,11 +20,55 @@
                 list-style-type: none;
             }
         }
+
+        .dropdown-otherpg:hover 
+        .item-menu-otherpg{
+            display: flex;
+            flex-direction: row-reverse;
+            text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
+            border-radius: 0 ;
+            position: absolute;  
+            top: -15px;
+            left: -300px;
+            background-color: $color-pred;
+        
+        }
+
+        .item-menu-otherpg li{
+            list-style: none;
+            border: none;
+            font-size: 1em;
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+            font-weight: 700;
+          
+        }
+
     .column-about{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 90px 10px 0 10px;
+        justify-items: center;
+        align-items: center;
+
     }
     .row-image-profile{
-        max-width: 500px
+        max-width: 500px;
+    }
+    .row-button{
+        grid-column: 1/3;
+    }
+    .row-skills{
+        grid-column: 2/2;
+        text-align: center;
+       
+    }
+    .row-text-profile{
+       grid-row: 1/3;
+       font-size: 1.2em;
+       padding: 20px;
+       
     }
     
     .contactme-form-header,
@@ -52,6 +98,19 @@
             margin-left: 120px;
           }
     }
-     
+
+    .column-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 100px 0 30px 0;
+        color: $color-dark;
+        row-gap: 20px;
+    }
+    
+    .column-form {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+      }
       
 }

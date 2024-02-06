@@ -83,20 +83,58 @@
         row-gap: 20px;
     }
 
-    .contactme-form{
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 30px;
-        align-items: end;
-    
+    .row-form{
+        display: flex;
+        justify-content: center;
     }
 
-    
+    .contactme-form{  //ho fatto diventare tutto il form flex e sistemato con il posizionamento avanzato ma adesso il footer si attacca al form
+        display: flex;
+        width: 900px;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        font-size: 1.5em;
+            textarea{
+                width: 500px;
+                height: 250px;
+                resize: none;
+            }
+
+            input[type='text'],
+            input[type='email'] {
+                width: 300px;
+            }
+    }
+
+    .send{
+        position: absolute;
+        right: 55px;
+        bottom: -45px;
+        
+    }
+
+    .email{
+        position: absolute;
+        left: 0px;
+        bottom: 80px;
+    }
+
+    .name{
+        position: absolute;
+        left: 0px;
+       
+    }
 
     .button-one{
         margin: 0;
     }
-}
+
+
+    }
+
+
+   
 
     
 

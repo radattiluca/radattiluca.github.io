@@ -59,11 +59,11 @@
     border: 1px solid $color-dark;
     background-color: $color-pred-trasp;
     border-radius: 3px;
-    min-height: 200px;
+    min-height: 100px;
     width: 230px;
     margin-bottom: 10px;
     padding: 7px;
-    resize: none; //disabled user resizing
+    resize: vertical;
     font-family: inherit;
     font-size: 0.8em;
   }

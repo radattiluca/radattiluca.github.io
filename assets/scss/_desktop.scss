@@ -85,24 +85,17 @@
 
     .contactme-form{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 30px;
         align-items: end;
     
     }
 
-    .row-social{
-        margin-left: 20px;
-    }
+    
 
     .button-one{
         margin: 0;
     }
-
-    textarea{
-        min-width: 500px;
-    }
-    
 }
 
     

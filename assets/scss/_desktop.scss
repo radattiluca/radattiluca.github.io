@@ -6,6 +6,7 @@
         font-size: 18px;
         text-transform: capitalize; //for the first capital letter
         margin:auto ;
+        
        }
 
        .navbar{
@@ -87,49 +88,61 @@
         display: flex;
         justify-content: center;
     }
-    //ho fatto diventare tutto il form flex e sistemato con il posizionamento avanzato ma adesso il     footer si attacca al form
-    .contactme-form{  
-        display: flex;
-        width: 900px;
-        justify-content: center;
-        flex-wrap: wrap;
-        position: relative;
-        font-size: 1.5em;
-            textarea{
-                width: 500px;
-                height: 250px;
-                resize: none;
-            }
-
-            input[type='text'],
-            input[type='email'] {
-                width: 300px;
-            }
-    }
-
-    .send{
-        position: absolute;
-        right: 55px;
-        bottom: -45px;
-        
-    }
-
-    .email{
-        position: absolute;
-        left: 0px;
-        bottom: 80px;
-    }
-
-    .name{
-        position: absolute;
-        left: 0px;
-       
-    }
 
     .button-one{
         margin: 0;
     }
 
+    //start form for desktop
+
+    .column-form{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+    .row-header-form{
+        text-align: center;
+    }
+
+    .contactme-form {
+        width: 70%;
+        background-color: $color-pred-trasp;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px 20px 0 20px;
+        box-sizing: content-box;
+    }
+    
+    .item-row {
+      flex-direction: row;
+      margin-bottom: 20px;
+      justify-content: center;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .item-row input[type='text'],
+    .item-row input[type='email'],
+    .item-row textarea {           
+      min-width: 400px;
+      height: initial;
+    }
+
+    .item-row label {
+      text-align: right;
+      width: 20px;
+      margin-top: 7px;
+      margin-right: 70px;
+      padding-right: 20px;
+    }
+
+    textarea{
+        resize: vertical;
+    }
+
+
+   
 
     }
 

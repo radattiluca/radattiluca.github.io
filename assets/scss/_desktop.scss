@@ -25,7 +25,7 @@
         .dropdown-otherpg:hover 
         .item-menu-otherpg{
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
             text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
             border-radius: 0 ;
             position: absolute;  
@@ -53,6 +53,10 @@
         justify-items: center;
         align-items: center;
 
+        .button-one{
+            margin-top: 10px;
+        }
+
     }
     .row-image-profile{
         max-width: 500px;
@@ -71,14 +75,12 @@
        padding: 20px;
        
     }
-    .button-one {
-        margin-left: 120px;
-      }
+    
 
 
     .column-cards{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 100px 0 30px 0;
         color: $color-dark;
         row-gap: 40px;
@@ -89,9 +91,6 @@
         justify-content: center;
     }
 
-    .button-one{
-        margin: 0;
-    }
 
     //start form for desktop
 

@@ -1,3 +1,72 @@
-@media only screen and (min-width:401px) and (max-width:960px){
+@media only screen and (min-width:430px) and (max-width:960px){
+
+    .column-about{
+        grid-template-columns: 600px;
+        gap: 10px;
+        margin: 90px 10px 0 10px;
+        justify-content: center;
+        justify-items: center;
+
+    }
+    .row-image-profile{
+        max-width: 400px;
+    }
+
+    .row-skills{
+        text-align: center;
+    }
+
+    .column-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 100px 0 30px 0;
+        color: $color-dark;
+        row-gap: 40px;
+    }
+
+    .column-form{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+    .row-header-form{
+        text-align: center;
+    }
+
+    .contactme-form {
+        width: 70%;
+        background-color: $color-pred-trasp;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px 20px 0 20px;
+        box-sizing: content-box;
+    }
     
+    .item-row {
+      flex-direction: row;
+      margin-bottom: 20px;
+      justify-content: center;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .item-row input[type='text'],
+    .item-row input[type='email'],
+    .item-row textarea {           
+      min-width: 300px;
+      height: initial;
+    }
+
+    .item-row label {
+      text-align: right;
+      width: 20px;
+      margin-top: 7px;
+      margin-right: 70px;
+      padding-right: 20px;
+    }
+
+    textarea{
+        resize: vertical;
+    }
 }

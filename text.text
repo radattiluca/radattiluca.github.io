@@ -24,6 +24,7 @@ Creare lo stile del portfolio
 capire perchè formsubmit non funziona 
 
 completare l'area del form, nella versione desktop capire come mettere la text area di fianco agli input email e full name
+ci sono riuscito impostando la proprietà flex-direction row a item row e optando per allungare le caselle di input del form e centrandole nella pagina.
 
 
 

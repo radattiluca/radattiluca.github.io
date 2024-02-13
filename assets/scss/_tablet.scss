@@ -1,7 +1,7 @@
 @media only screen and (min-width:430px) and (max-width:960px){
 
     .column-about{
-        grid-template-columns: 600px;
+        grid-template-columns: 1fr;
         gap: 10px;
         margin: 90px 10px 0 10px;
         justify-content: center;

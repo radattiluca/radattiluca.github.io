@@ -177,8 +177,9 @@
 
   .column-footer{
     display: flex;
+    flex-direction: column;
     padding: 20px;
-    justify-content: center;
+    align-items: center;
     color: $color-dark;
     background-color: $color-pred-trasp;
   }

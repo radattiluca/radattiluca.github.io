@@ -73,11 +73,11 @@ a:hover {
         position: relative; 
         cursor: pointer;
         left: 0;
-        animation-name: example;
+        animation-name: dropmove;
         animation-iteration-count: 3;
         animation-duration: 1.5s;
     }
-    @keyframes example {
+    @keyframes dropmove {
         0%   {left:0px; top:0px;}  
         25%  {left:0px; top:0px;}
         50%  {left:0px; top:10px;}

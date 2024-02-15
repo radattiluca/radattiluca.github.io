@@ -2,6 +2,8 @@
 @import 'utilities';
 @import 'button';
 @import 'form';
+@import 'cards';
+@import 'dropdown-menu';
 
 *{
     box-sizing: border-box;
@@ -9,24 +11,22 @@
     padding: 0;
 }
 
+body{
+    font-family: $font-style;
+    line-height: 1.6;
+    font-size: 18px;
+    text-transform: capitalize; //for the first capital letter
+    background-color: $color-link;
+  
+      a{
+       color: $color-link; //change color link
+      }
+  }
+
 .grid-logo{
     display: grid;
     grid-template-columns: 40px 40px 40px;
 }
-
-.item-logo{
-    
-    padding-top: 20px;
-    padding-left: 10px;
-}
-    svg{
-        width: 40px;
-        height: 30px;
-        fill: $color-pred;
-        border-radius: 5px;
-        
-    }
-
 
 .navbar{
     position: fixed;
@@ -54,6 +54,7 @@
             font-size: 0.8em;
             line-height: 0.5;
             color: $color-primary;
+            text-decoration: none;
         }
 }
 
@@ -103,6 +104,10 @@
         }
 }
 
+.about{
+    background-color: $color-link;
+}
+
 .row-image-profile {
     width: 100%;
     padding: 20px 70px 10px 70px;
@@ -142,37 +147,6 @@
     
 }
 
-.column-cards{
-    display: grid;
-    grid-template-columns: auto;
-    margin: 80px 0 30px 0;
-    color: $color-dark;
-    row-gap: 20px;
-}
-
-.row-cards{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 70%;
-    border: 3px solid $color-link;
-    color: $color-pred;
-}
-  
-  .card:hover {
-    cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 5px 16px 5px 16px;
-    background-color: $color-pred-trasp;
-  }
 
   .column-footer{
     display: flex;
@@ -183,9 +157,9 @@
     background-color: $color-pred-trasp;
   }
 
-.about{
-    background-color: $color-link;
-}
+
+
+
 
 
     @import 'tablet';

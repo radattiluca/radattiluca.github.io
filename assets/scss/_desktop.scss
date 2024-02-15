@@ -5,10 +5,11 @@
         line-height: 1.6;
         font-size: 18px;
         text-transform: capitalize; //for the first capital letter
-        margin:auto ;
+        margin:0 auto;
+        position: relative;
         
        }
-
+       
        .navbar{
         position: fixed;
         display: flex;
@@ -73,6 +74,7 @@
             }
           
         }
+
 
     .column-about{
         grid-template-columns: 1fr 1fr;

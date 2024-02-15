@@ -24,8 +24,10 @@
       margin: 5px;
       text-align: center;
       font-weight: 700;
-      
-      
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
     }
 }
 
@@ -44,13 +46,6 @@
 }
 
 
-a:link,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
 
 .dropdown{
     position: relative;
@@ -92,6 +87,11 @@ a:hover {
     
     .item-menu-otherpg{
         display: none;
+
+          a:link,
+          a:visited {
+            text-decoration: none;
+          }
     }
     
     .navigation-otherpg{
@@ -117,13 +117,7 @@ a:hover {
       
     }
     
-    a:link,
-    a:visited {
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    
     
     .dropdown-otherpg{
         position: relative;

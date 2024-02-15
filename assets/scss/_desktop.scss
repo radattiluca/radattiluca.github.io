@@ -7,8 +7,7 @@
         text-transform: capitalize; //for the first capital letter
         margin:0 auto;
         position: relative;
-        
-       }
+    }
        
        .navbar{
         position: fixed;
@@ -85,6 +84,7 @@
 
         .button-one{
             margin-top: 10px;
+            text-decoration: none;
         }
 
     }
@@ -169,7 +169,7 @@
     .column-footer{
         display: flex;
         flex-direction: row;
-        padding: 20px 40px 20px 20px;
+        padding: 20px 40px 10px 20px;
         justify-content: space-between;
         color: $color-dark;
         background-color: $color-pred-trasp;

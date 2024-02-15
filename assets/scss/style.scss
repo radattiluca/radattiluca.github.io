@@ -49,12 +49,13 @@ body{
     font-weight: 700;
     font-size: 1em;
     flex-wrap: wrap;
-
+        a{
+            text-decoration: none;
+        }
         h1{
             font-size: 0.8em;
             line-height: 0.5;
             color: $color-primary;
-            text-decoration: none;
         }
 }
 
@@ -144,6 +145,10 @@ body{
     width: 100%;
     margin: 15px 0 15px 0;
     flex-wrap: wrap;
+
+    a{
+        text-decoration: none;
+    }
     
 }
 

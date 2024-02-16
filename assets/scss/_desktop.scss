@@ -22,6 +22,13 @@
             }
         }
 
+        .logo-name{
+            a:hover{
+                color: $color-dark;
+                transition: 0.5s;
+            }
+        }
+
         .dropdown-otherpg:hover 
         .item-menu-otherpg{
             display: flex;
@@ -35,7 +42,9 @@
         
         }
 
-        .item-menu-otherpg li{
+        .item-menu-otherpg{ 
+        
+            li{
             list-style: none;
             border: none;
             font-size: 1em;
@@ -43,6 +52,12 @@
             margin: 0;
             text-align: center;
             font-weight: 700;
+            }
+
+            a:hover
+            {
+             font-size: 110%;
+           }
           
         }
 
@@ -59,18 +74,24 @@
         
         }
 
-        .item-menu li{
-            list-style: none;
-            border: none;
-            font-size: 1em;
-            padding: 15px;
-            margin: 0;
-            text-align: center;
-            font-weight: 700;
+        .item-menu{ 
+        
+            li{
+                list-style: none;
+                border: none;
+                font-size: 1em;
+                padding: 15px;
+                margin: 0;
+                text-align: center;
+                font-weight: 700;
+            }
             a{
                 color: $color-pred;
-          
+                &:hover{
+                    font-size: 110%; 
+                }
             }
+            
           
         }
 
@@ -177,10 +198,32 @@
       .about{
         background-color: $color-link;
     }
-
+    
+    //start scrollbar
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+  
+  
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $color-link; 
+   
+    }
+   
+  
+    ::-webkit-scrollbar-thumb {
+        background: $color-pred-trasp; 
+        border-radius: 5px;
+    }
+  
+  
+    ::-webkit-scrollbar-thumb:hover {
+        background: $color-dark; 
+    }
+    //finish scrollbar   
    
 
-    }
+}
 
 
    

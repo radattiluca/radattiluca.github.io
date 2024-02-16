@@ -18,6 +18,11 @@
     width: 70%;
     border: 3px solid $color-link;
     color: $color-pred;
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
 }
   
   .card:hover {
@@ -26,6 +31,7 @@
   }
   
   .container {
+    margin: 5px;
     padding: 5px 16px 5px 16px;
     background-color: $color-pred-trasp;
   }

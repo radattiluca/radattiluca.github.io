@@ -27,6 +27,19 @@ body{
     grid-template-columns: 40px 40px 40px;
 }
 
+.item-logo{
+    padding-top: 20px;
+    padding-left: 10px;
+  
+  }
+    svg{
+        width: 40px;
+        height: 30px;
+        fill: $color-pred;
+        border-radius: 5px;
+        
+    }
+
 .navbar{
     position: fixed;
     display: flex;
@@ -129,13 +142,6 @@ body{
     text-align: left;
     width: 100%;
     padding: 20px 20px 20px 20px;
-    
-
-    .button-one:hover{
-        background-color: $color-pred;
-        padding: 10px; //to cancel the effect given to the buttons
-        cursor:default; //to cancel the pointer cursor
-    }
 }
 
 .row-button{
@@ -169,19 +175,6 @@ body{
     color: $color-dark;
     background-color: $color-pred-trasp;
   }
-
-  .item-logo{
-    padding-top: 20px;
-    padding-left: 10px;
-  
-  }
-    svg{
-        width: 40px;
-        height: 30px;
-        fill: $color-pred;
-        border-radius: 5px;
-        
-    }
   
   .arrow-back-up{
     position: fixed;

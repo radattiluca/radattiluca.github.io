@@ -28,7 +28,7 @@
                 transition: 0.5s;
             }
         }
-
+        //menu other page start
         .dropdown-otherpg:hover 
         .item-menu-otherpg{
             display: flex;
@@ -60,7 +60,8 @@
            }
           
         }
-
+        //menu other page finish
+        //menu first page start
         .dropdown:hover 
         .item-menu{
             display: flex;
@@ -94,7 +95,9 @@
             
           
         }
+        //menu first page finish
 
+    //section about start
 
     .column-about{
         grid-template-columns: 1fr 1fr;
@@ -118,6 +121,12 @@
     .row-skills{
         grid-column: 2/2;
         text-align: center;
+
+        .button-one:hover{
+            background-color: $color-pred;
+            padding: 10px; //to cancel the effect given to the buttons
+            cursor:default; //to cancel the pointer cursor
+        }
        
     }
     .row-text-profile{
@@ -126,7 +135,7 @@
        padding: 20px;
        
     }
-    
+    //section about finish
 
 
     .column-cards{
@@ -137,13 +146,7 @@
         row-gap: 40px;
     }
 
-    .row-form{
-        display: flex;
-        justify-content: center;
-    }
-
-
-    //start form for desktop
+    //start section form for desktop
 
     .column-form{
         flex-direction: row;
@@ -151,8 +154,14 @@
 
 
     }
+   
     .row-header-form{
         text-align: center;
+    }
+
+    .row-form{
+        display: flex;
+        justify-content: center;
     }
 
     .contactme-form {
@@ -186,6 +195,7 @@
       margin-right: 70px;
       padding-right: 20px;
     }
+    //finish section form for desktop
 
     .column-footer{
         display: flex;
@@ -199,7 +209,7 @@
         background-color: $color-link;
     }
     
-    //start scrollbar
+    //start custom scrollbar
     ::-webkit-scrollbar {
         width: 8px;
     }
@@ -218,9 +228,9 @@
   
   
     ::-webkit-scrollbar-thumb:hover {
-        background: $color-dark; 
+        background: $color-pred; 
     }
-    //finish scrollbar   
+    //finish custom scrollbar   
    
 
 }

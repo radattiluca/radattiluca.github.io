@@ -13,8 +13,8 @@
 
     &:hover{
         background-color: $color-dark;
-            padding-right: 15px;
-            padding-left: 15px;
-    }
+            padding-right: 15px; //to make the button lengthen laterally
+            padding-left: 15px; //to make the button lengthen laterally
+    }       //used because the scale property blurs the text
     
 }

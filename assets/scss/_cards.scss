@@ -25,7 +25,7 @@
     }
 
     &:hover {
-      cursor: pointer;
+      cursor: pointer; //not to change the cursor icon when passing on the card area
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     

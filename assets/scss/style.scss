@@ -173,6 +173,12 @@ svg{
     color: $color-dark;
     background-color: $color-pred-trasp;
   }
+
+.contactmefooter{
+    position: absolute; //to place the footer only for contactme
+    bottom: 0px;
+    width: 100%;
+}
   
 .about{
     background-color: $color-link; //only for mobile style 

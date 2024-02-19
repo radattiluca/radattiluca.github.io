@@ -28,6 +28,10 @@
     a:link,
     a:visited {
       text-decoration: none;
+
+        &:active{
+          color: $color-primary;
+        }
     }
 }
 
@@ -91,6 +95,10 @@
           a:link,
           a:visited {
             text-decoration: none;
+
+            &:active{
+              color: $color-primary;
+            }
           }
     }
     

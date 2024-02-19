@@ -217,7 +217,11 @@
     ::-webkit-scrollbar-thumb:hover {
         background: $color-pred; 
     }
-    //finish custom scrollbar   
+    //finish custom scrollbar 
+    
+    .arrow-back-up:hover{
+        font-size: 150%; 
+    }
 }
 
 

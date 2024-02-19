@@ -4,6 +4,8 @@
 @import 'cards';
 @import 'dropdown-menu';
 
+//mobile
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,6 +24,7 @@ body{
       }
   }
 
+//start navbar style first page
 .grid-logo{
     display: grid;
     grid-template-columns: 40px 40px 40px;
@@ -30,16 +33,17 @@ body{
 .item-logo{
     padding-top: 20px;
     padding-left: 10px;
-  
-  }
-    svg{
-        width: 40px;
-        height: 30px;
-        fill: $color-pred;
-        border-radius: 5px;
-        
-    }
+}
 
+svg{
+    width: 40px;
+    height: 30px;
+    fill: $color-pred;
+    border-radius: 5px;
+}
+//end style navbar first page
+
+//start style navbar other page
 .navbar{
     position: fixed;
     display: flex;
@@ -53,7 +57,6 @@ body{
         list-style-type: none;
     }
 }
-
 
 .logo-name{
     display: flex;
@@ -73,7 +76,9 @@ body{
         }
        
 }
+//end style navbar other page
 
+//start style body first page
 .column-firstpage{
     margin:50px 15px 30px 15px;
     padding: 40px 0 40px 0;
@@ -93,9 +98,9 @@ body{
         color: $color-primary;
     }
 }
+//end style body first page
 
-
-
+//start style section about
 .column-about{
     display: grid;
     grid-template-columns: auto;
@@ -120,14 +125,9 @@ body{
         }
 }
 
-.about{
-    background-color: $color-link;
-}
-
 .row-image-profile {
     width: 100%;
     padding: 20px 70px 10px 70px;
-    
 } 
 
 .row-text-profile {
@@ -135,7 +135,6 @@ body{
     width: 100%;
     padding: 0 30px 30px 30px;
     background-color: $color-pred-trasp;
-    
 } 
 
 .row-skills{
@@ -149,9 +148,7 @@ body{
     width: 100%;
     padding: 20px 20px 20px 20px;
     background-color: $color-pred-trasp;
-     
 }
-
 
 .button-ct{
     display: flex;
@@ -163,11 +160,11 @@ body{
     a{
         text-decoration: none;
     }
-    
 }
+//end style section about
 
 
-  .column-footer{
+.column-footer{
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -177,16 +174,16 @@ body{
     background-color: $color-pred-trasp;
   }
   
-  .arrow-back-up{
+.about{
+    background-color: $color-link; //only for mobile style 
+}
+  
+.arrow-back-up{
     position: fixed;
     z-index: 1000;
     bottom: 1px;
     right: 2px;
-  }
+}
   
-
-
-
-
-    @import 'tablet';
-    @import 'desktop';
+@import 'tablet';
+@import 'desktop';

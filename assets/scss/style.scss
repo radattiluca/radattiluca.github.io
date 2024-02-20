@@ -12,7 +12,11 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
     font-family: $font-style;
     line-height: 1.6;
     font-size: 18px;
@@ -175,6 +179,10 @@ svg{
     }
 }
 
+.extra, .column-footer{
+    height: 100px;
+}
+
 .column-footer{
     display: flex;
     flex-direction: column;
@@ -185,7 +193,7 @@ svg{
     background-color: $color-pred-trasp;
 
     a{
-        text-decoration: none;
+        text-decoration: none; 
        }
   }
 

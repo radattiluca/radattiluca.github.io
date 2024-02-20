@@ -183,6 +183,10 @@ svg{
     align-items: center;
     color: $color-dark;
     background-color: $color-pred-trasp;
+
+    a{
+        text-decoration: none;
+       }
   }
 
 .about{

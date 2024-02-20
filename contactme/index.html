@@ -87,10 +87,24 @@
           </div>
 
           <div class='item-row'>
-            <input class="button-one" type="submit" id="submit" value="Send Message"> <!--to use the customization of the button text-->
+            <input class="button-one" type="submit" id="submit" value="Send Message" onclick="myFunction()"> <!--to use the customization of the button text-->
           </div>
         </form>
   </div>
+
+  <section>
+    <div id="snackbar">message sent successfully</div>
+
+    <script>
+      function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+    </script>
+  </section>
+
+
 
   <section>
     <div class="arrow-back-up">

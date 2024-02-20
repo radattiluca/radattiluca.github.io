@@ -13,10 +13,10 @@
 }
 
 html{
-    height: 100%;
+    height: 100%; //to send the footer at the bottom of the page when the content is not enough
 }
 body{
-    height: 100%;
+    height: 100%; //to send the footer at the bottom of the page when the content is not enough
     font-family: $font-style;
     line-height: 1.6;
     font-size: 18px;
@@ -180,7 +180,7 @@ svg{
 }
 
 .extra, .column-footer{
-    height: 100px;
+    height: 100px; //to send the footer at the bottom of the page when the content is not enough
 }
 
 .column-footer{

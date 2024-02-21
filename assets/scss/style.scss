@@ -146,6 +146,12 @@ svg{
     text-align: left;
     width: 100%;
     padding: 20px 20px 20px 20px;
+
+        .button-one:hover{
+            background-color: $color-pred;
+            padding: 10px; //to cancel the effect given to the buttons
+            cursor:default; //to cancel the pointer cursor
+        }
 }
 
 .row-button{

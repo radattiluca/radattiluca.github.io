@@ -4,7 +4,6 @@
 @import 'cards';
 @import 'dropdown-menu';
 @import 'toast';
-
 //mobile
 
 *{
@@ -205,6 +204,76 @@ svg{
     z-index: 1000;
     bottom: 1px;
     right: 2px;
+}
+
+.column-cv{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin-top: 100px;
+
+        h3{
+            color: $color-dark;
+        }
+}
+
+.row-image-cv{
+    background-color: $color-pred-trasp;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+        img{
+            max-width: 300px;
+            border: 2px solid $color-pred;
+        }
+}
+
+.row-name-cv{
+    text-align: center;
+    color: $color-dark;
+    padding: 30px 10px 10px 10px;
+    background-color: $color-link;
+    font-size: 2.5em;
+    
+}
+
+.row-personal-info{
+    background-color: $color-pred-trasp;
+    box-sizing: content-box;
+    
+    
+        li{
+            list-style-type: none;
+        };
+        div{
+            padding: 20px;
+            
+        }
+        p{
+            text-transform: none;
+        }
+
+        h3{
+            color: $color-pred;
+        }
+    
+}
+
+.row-exp{
+    background-color: $color-link;
+    padding: 0 0 0 50px;
+
+        h4{
+            padding: 5px 0 5px 0;
+        }
+        ul{
+            margin: 10px 0 0 30px;
+        }
+        div{
+            font-size: 0.8em;
+        }
+    
 }
   
 @import 'tablet';

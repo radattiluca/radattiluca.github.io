@@ -219,6 +219,9 @@ svg{
         h3{
             color: $color-dark;
         }
+        svg{
+            fill:$color-dark;
+        }
 }
 
 .row-name-cv{
@@ -272,6 +275,7 @@ svg{
         a{
             color: $color-dark;
             text-transform: none;
+            text-decoration: none;
         }
 
         .item-logo{

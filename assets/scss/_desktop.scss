@@ -207,6 +207,12 @@
             }
     }
 
+    .row-exp{
+        h3:first-of-type{
+            padding-top: 0;
+        }
+    }
+
     .row-name-cv{
        text-align: left;
        font-size: 2em;

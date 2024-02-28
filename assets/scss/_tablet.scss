@@ -10,6 +10,10 @@
 
     .row-image-profile{
         max-width: 400px;
+
+        img{
+            width: 100%;
+        }
     }
 
     .row-skills{
@@ -67,5 +71,20 @@
 
     textarea{
         resize: vertical;
+    }
+    
+    .column-cv{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content: center;
+        justify-items: center;
+       
+    }
+    .row-imagecv-profile{
+        max-width: 400px;
+            
+            img{
+                width: 100%;
+            }
     }
 }

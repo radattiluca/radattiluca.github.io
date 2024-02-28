@@ -191,7 +191,28 @@
     //finish section form for desktop
 
     //start section cv
-    
+    .column-cv{
+        grid-template-columns: 400px 1fr;
+        gap: 5px;
+        margin: 90px 10px 0 10px;
+    }
+
+    .row-imagecv-profile{
+        max-width: 600px;
+        background-color: $color-pred-trasp;
+        grid-row: 1/2;
+
+            img{
+                width: 100%;
+            }
+    }
+
+    .row-name-cv{
+       text-align: left;
+       font-size: 2em;
+       background-color: $color-link;
+       padding-left: 30px;
+    }
     //finish section cv
 
     .column-footer{

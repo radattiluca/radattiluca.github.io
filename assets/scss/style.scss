@@ -132,6 +132,10 @@ svg{
 .row-image-profile {
     width: 100%;
     padding: 20px 70px 10px 70px;
+
+    img{
+        width: 100%;
+    }
 } 
 
 .row-text-profile {
@@ -177,58 +181,29 @@ svg{
     padding: 10px 0 10px 0;
 }
 
-.extra, .column-footer{
-    height: 100px; //to send the footer at the bottom of the page when the content is not enough
-}
-
-.column-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-top: 5px;
-    align-items: center;
-    color: $color-dark;
-    background-color: $color-pred-trasp;
-
-    a{
-        text-decoration: none; 
-       }
-  }
-
-.about{
-    background-color: $color-link; //only for mobile style 
-}
-  
-.arrow-back-up{
-    position: fixed;
-    z-index: 1000;
-    bottom: 1px;
-    right: 2px;
-}
-
 //start section mobile cv
 .column-cv{
     display: grid;
     grid-template-columns: auto;
     margin-top: 60px;
+    font-size: 0.8em;
     
-        img{
-            border: 2px solid $color-pred;
-            max-width: 200px;
-        }
         h3{
             color: $color-dark;
         }
         svg{
             fill:$color-dark;
+            width: 20px;
+            margin: 0 5px 0 5px;
         }
 }
 
 .row-name-cv{
     text-align: center;
+    width: 100%;
     color: $color-dark;
     padding: 30px 10px 10px 10px;
-    background-color: $color-link;
+    background-color: $color-pred-trasp;
 
         h1{
             font-size: 2.5em;
@@ -243,6 +218,11 @@ svg{
     display: flex;
     justify-content: center;
     padding: 20px 70px 20px 70px;
+
+    img{
+        border: 2px solid $color-pred;
+        width: 200px;
+    }
 }
 
 .row-personal-info{
@@ -288,20 +268,57 @@ svg{
     background-color: $color-link;
     padding: 10px 30px 10px 30px ;
 
+        h3{
+            color: $color-pred;
+            padding-top: 20px;
+        }
         h4{
-            padding: 5px 0 5px 0;
+            padding: 20px 0 5px 0;
         }
         ul{
             margin: 10px 0 0 30px;
         }
         div{
-            font-size: 0.8em;
+            font-size: 1em;
+            color: $color-dark;
         }
         li{
             margin-top: 5px;
         }
     
 }
+//end section cv mobile
+
+.extra, .column-footer{
+    height: 100px; //to send the footer at the bottom of the page when the content is not enough
+}
+
+.column-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 5px;
+    align-items: center;
+    color: $color-dark;
+    background-color: $color-pred-trasp;
+
+    a{
+        text-decoration: none; 
+       }
+  }
+
+.about{
+    background-color: $color-link; //only for mobile style 
+}
+  
+.arrow-back-up{
+    position: fixed;
+    z-index: 1000;
+    bottom: 1px;
+    right: 2px;
+}
+
+
   
 @import 'tablet';
 @import 'desktop';

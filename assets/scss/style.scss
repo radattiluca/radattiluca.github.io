@@ -206,6 +206,7 @@ svg{
     right: 2px;
 }
 
+//start section mobile cv
 .column-cv{
     display: grid;
     grid-template-columns: auto;
@@ -267,13 +268,13 @@ svg{
             font-size: 0.8em;
         }
 
-        .dropdown {
+        .dropdown-list {
             max-width: 13em;
             position: relative;
             width: 100%;
           }
           
-          .dropdown-btn {
+          .dropdown-list-btn {
             background-color: none;
             width: 100%;
             border: none;
@@ -295,26 +296,35 @@ svg{
             transition: transform ease-in-out 0.3s;
           }
           
-          .dropdown-content {
+          .dropdown-list-content {
             list-style: none;
             position: absolute;
             top: 30px;
             left: -30px;
-            width: 100%;
+            width: 150%;
             visibility: hidden;
           /*   overflow: hidden; */
             transform: translateY(-1em);
             transition: transform ease 0.3s;
+
+                p{
+                    margin: 5px 0 5px 0;
+                }
+                span{
+                    font-weight: 700;
+                }
           }
           
-          input[type="checkbox"]:checked ~ .dropdown-content {
+          input[type="checkbox"]:checked ~ .dropdown-list-content {
             visibility: visible;
             transform: translateY(0);
+            position: relative;
           }
           
-          .dropdown-content li {
-            background: $color-dark;
+          .dropdown-list-content li {
+            background: none;
             border-radius: 0.5em;
+            padding: 5px;
           }
           
           input[type="checkbox"]:checked + label > .arrow {
@@ -331,10 +341,10 @@ svg{
           }
           
           
-          .dropdown-content li a {
+          .dropdown-list-content li{
             display: block;
             padding: 0.7em 0.5em;
-            color: #fff;
+            color: $color-dark;
             margin: 0.1em 0;
             text-decoration: none;
           }

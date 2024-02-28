@@ -211,7 +211,11 @@ svg{
     display: grid;
     grid-template-columns: auto;
     margin-top: 60px;
-
+    
+        img{
+            border: 2px solid $color-pred;
+            max-width: 200px;
+        }
         h3{
             color: $color-dark;
         }
@@ -232,6 +236,12 @@ svg{
     
 }
 
+.row-imagecv-profile{
+    display: flex;
+    justify-content: center;
+    padding: 20px 70px 20px 70px;
+}
+
 .row-personal-info{
     background-color: $color-pred-trasp;
     box-sizing: content-box;
@@ -239,17 +249,33 @@ svg{
     
         li{
             list-style-type: none;
-        };
+            color: $color-dark;
+            margin-left: 5px;
+
+                &:first-of-type{
+                    margin-top: 10px;
+                }
+        }
         div{
             padding: 10px 30px 10px 30px;
             
         }
         p{
             text-transform: none;
+            color: $color-dark;
+            margin-top: 10px;
         }
 
         h3{
             color: $color-pred;
+        }
+        a{
+            color: $color-dark;
+            text-transform: none;
+        }
+
+        .item-logo{
+            padding: 20px 0 0 0;
         }
     
 }
@@ -266,6 +292,9 @@ svg{
         }
         div{
             font-size: 0.8em;
+        }
+        li{
+            margin-top: 5px;
         }
     
 }

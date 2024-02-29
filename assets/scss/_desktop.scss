@@ -1,7 +1,7 @@
 @media only screen and (min-width:961px){
     %dropdownhoverdesktop{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
         position: absolute;  
         top: -15px;
@@ -98,7 +98,7 @@
     .column-about{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        margin: 90px 10px 0 10px;
+        margin: 90px 10px 10px 10px;
         justify-items: center;
         align-items: center;
 
@@ -162,6 +162,7 @@
         background-color: $color-pred-trasp;
         margin: auto;
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 20px 20px 0 20px;
         box-sizing: content-box;
     }
@@ -233,10 +234,6 @@
         color: $color-dark;
         background-color: $color-pred-trasp;
       }
-
-    .about{
-        background-color: $color-link; //to change bg’s color in the footer section of the about page
-    }
     
     //start custom scrollbar
     ::-webkit-scrollbar {

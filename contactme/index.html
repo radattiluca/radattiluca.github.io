@@ -26,28 +26,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ae584c6ae.js" crossorigin="anonymous"></script>
     <!--start script for send form-->
-    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init({
-              publicKey: "E4vOe-xZbnNiOZ3WT",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                emailjs.sendForm('default_service', 'template_bnovvph', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <script type="text/javascript" src="/assets/js/initemailjs.js"></script>
+    <script type="text/javascript" src="/assets/js/formjs.js"></script>
+    <script src="/assets/js/sendmessage.js"></script>
+    
 </head>
 <body tabindex="0">
     <header id="back-up">
@@ -78,7 +61,7 @@
         <h1>Contact me</h1>
       </div>
       
-        <form id="form" class="contactme-form">
+        <form id="form" class="contactme-form" onsubmit="return showMessage()">
           <input type="hidden" name="contact_number">
           <div class='item-row'>
             <label>Name</label>
@@ -96,18 +79,10 @@
           </div>
 
           <div class='item-row'>
-            <input class="button-one" type="submit" id="submit" value="Send Message" onclick="myFunction()"> <!--to use the customization of the button text-->
+            <input class="button-one" type="submit" id="submit" value="Send Message"> <!--to use the customization of the button text-->
           </div>
         </form>
   </div>
-
-  <section>
-    <!--function to give a reply message to the user sending a message-->
-    <div id="snackbar">message sent successfully</div>
-    <script src="/assets/js/snackbar.js"></script>
-  </section>
-
-
 
   <section>
     <div class="arrow-back-up">

@@ -3,7 +3,6 @@
 @import 'form';
 @import 'cards';
 @import 'dropdown-menu';
-@import 'toast';
 //mobile
 
 *{
@@ -306,10 +305,6 @@ svg{
         text-decoration: none; 
        }
   }
-
-.about{
-    background-color: $color-link; //only for mobile style 
-}
   
 .arrow-back-up{
     position: fixed;

@@ -290,6 +290,15 @@ svg{
     
 }
 //end section cv mobile
+.card{
+    .container{
+        font-size: 0.7em;
+
+            p{
+                text-transform: none;
+            }
+    }
+}
 
 .extra, .column-footer{
     height: 100px; //to send the footer at the bottom of the page when the content is not enough

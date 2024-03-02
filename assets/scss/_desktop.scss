@@ -110,6 +110,10 @@
     }
     .row-image-profile{
         max-width: 500px;
+
+            img{
+                width: 100%;
+            }
     }
     .row-button{
         grid-column: 1/3;

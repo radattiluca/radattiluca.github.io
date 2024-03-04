@@ -194,6 +194,10 @@
       height: initial;
     }
 
+    textarea{
+        resize: vertical;
+    }
+
     .item-row label {
       text-align: right;
       width: 20px;

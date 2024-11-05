@@ -1,5 +1,5 @@
 function showMessage() {
-    var isSubmittedSuccessfully = true;
+    let isSubmittedSuccessfully = true;
 
     if (isSubmittedSuccessfully) {
         // Show a success message

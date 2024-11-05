@@ -88,8 +88,8 @@ svg{
     background-color: $color-pred-trasp;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    }
+
 
 .row-name-firstpg{
     text-align: center;
@@ -242,7 +242,7 @@ svg{
                 }
         }
         div{
-            padding: 10px 30px 10px 30px;
+            padding: 10px 30px 20px 30px;
             
         }
         p{
@@ -283,9 +283,23 @@ svg{
         div{
             font-size: 1em;
             color: $color-dark;
+            padding-bottom: 20px;
         }
         li{
             margin-top: 5px;
+        }
+        a{
+            color: $color-light;
+            text-transform: none;
+            text-decoration: none;
+        }
+        #competenze{
+            li{
+                font-weight: 700;
+            }
+            p{
+                text-transform: none;
+            }
         }
     
 }

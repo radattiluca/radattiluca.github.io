@@ -5,6 +5,7 @@
                 emailjs.sendForm('default_service', 'template_bnovvph', this)
                     .then(() => {
                         console.log('SUCCESS!');
+                        this.reset();
                     }, (error) => {
                         console.log('FAILED...', error);
                     });

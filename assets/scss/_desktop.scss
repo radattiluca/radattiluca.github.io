@@ -37,8 +37,9 @@
         position: fixed;
         display: flex;
         max-width: 1440px;
+        height: 80px;
         justify-content: space-between;
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px 20px 20px;
         top: 0;
     
             li{
@@ -47,10 +48,13 @@
     }
 
     .logo-name{
-            a:hover{
-                color: $color-dark;
-                transition: 0.5s;
+            img{
+                height: 70px;
             }
+    }
+
+    .navigation-otherpg{
+        margin-top: 20px;
     }
 
         //start navbar and dropdown menu first page

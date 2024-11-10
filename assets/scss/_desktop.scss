@@ -1,4 +1,5 @@
 @media only screen and (min-width:961px){
+
     %dropdownhoverdesktop{
         display: flex;
         flex-direction: row-reverse;
@@ -145,7 +146,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 100px 0 30px 0;
-        color: $color-dark;
+        color: $color-pred
+        ;
         row-gap: 40px;
 
         .card{
@@ -251,7 +253,8 @@
         flex-direction: row;
         padding: 20px 40px 10px 20px;
         justify-content: space-between;
-        color: $color-dark;
+        color: $color-pred
+        ;
         background-color: $color-pred-trasp;
       }
     

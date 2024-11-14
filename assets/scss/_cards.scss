@@ -1,9 +1,10 @@
 .column-cards{
     display: grid;
     grid-template-columns: auto;
-    margin: 80px 0 30px 0;
+    padding: 0px 0 30px 0;
     color: $color-dark;
     row-gap: 20px;
+    
 }
 
 .row-cards{

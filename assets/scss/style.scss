@@ -29,10 +29,12 @@ body{
       h1{
         text-align: center;
         text-transform: none;
-        padding: 20px 0 20px 0;
-        background-color: $color-pred;
-        color: $color-link;
+        color: $color-pred;
     }
+  }
+
+  .work{
+    background-color: $color-link;
   }
 
 
@@ -92,6 +94,7 @@ svg{
     background-color: $color-pred-trasp;
     display: flex;
     flex-direction: column;
+    background-color: $color-link;
     }
 
 
@@ -174,6 +177,7 @@ svg{
     display: grid;
     grid-template-columns: auto;
     font-size: 0.8em;
+    padding-bottom: 50px;
     
         h3{
             color: $color-pred;
@@ -192,7 +196,7 @@ svg{
     text-align: center;
     width: 100%;
     color: $color-pred;
-    padding: 30px 10px 10px 10px;
+    padding: 30px 10px 10px 30px;
     background-color: $color-pred-trasp;
 
     h2{
@@ -205,6 +209,7 @@ svg{
     display: flex;
     justify-content: center;
     padding: 20px 70px 20px 70px;
+    background-color: $color-pred-trasp;
 
     img{
         border: 2px solid $color-pred;

@@ -25,6 +25,7 @@ body{
   
       a{
        color: $color-link; //change color link
+       text-decoration: none;
       }
       h1{
         text-align: center;
@@ -36,12 +37,42 @@ body{
 .grid-nav{
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: space-between;
+    background-color: $color-pred;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
 
-        .item-logo{
-            width: 40px;
+    .row-logo{
+        display: grid;
+        grid-template-columns: auto auto auto;
         
+        svg{
+            width: 40px;
+            height: 30px;
+            fill: $color-link;
+            border-radius: 5px;
+            padding-top: 8px;
         }
+    }
+
+    .row-menu{
+        position: relative;
+
+            .dropdown-content{
+            position: absolute;
+            right: 0px;
+            }
+
+            ul{
+                list-style-type:none;
+                text-align: right
+            }
+    }
+    
 }
+
+
 
   
 @import 'tablet';

@@ -5,6 +5,12 @@
 // Prendiamo il pulsante e il menu
 const dropdownBtn = document.querySelector('.dropdown-btn');
 const dropdownContent = document.querySelector('.dropdown-content');
+const widthClient = document.documentElement.clientWidth;
+
+if(widthClient < 800){
+    dropdownContent.style.minWidth = widthClient + "px";
+};
+
 
 // Aggiungiamo un evento click al pulsante per mostrare/nascondere il menu
 dropdownBtn.addEventListener('click', function() {

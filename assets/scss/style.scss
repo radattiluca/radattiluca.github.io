@@ -64,6 +64,20 @@ body{
     
 }
 
+.container-grid{
+    display: grid;
+    grid-template-columns: auto;
+    .item-grid-1{
+        text-align: center;
+            
+            img{
+                margin-top: 80px;
+                width: 100%;
+                max-width: 400px;
+            }
+    }
+   
+}
 
 
   

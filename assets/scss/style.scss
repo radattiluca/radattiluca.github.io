@@ -40,34 +40,26 @@ body{
     justify-content: space-between;
     background-color: $color-pred;
     width: 100%;
+    padding: 5px;
     position: fixed;
     z-index: 3;
 
     .row-logo{
-        display: grid;
-        grid-template-columns: auto auto auto;
+        display: flex;
+        align-items: end;
         
         svg{
             width: 40px;
             height: 30px;
             fill: $color-link;
             border-radius: 5px;
-            padding-top: 8px;
         }
     }
 
     .row-menu{
+        display: flex;
         position: relative;
-
-            .dropdown-content{
-            position: absolute;
-            right: 0px;
-            }
-
-            ul{
-                list-style-type:none;
-                text-align: right
-            }
+        align-items: end;
     }
     
 }

@@ -1,4 +1,4 @@
-.column-form {
+.row-form {
   background-color: $color-pred-trasp;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
     }
 }
 
-.item-row {
+.item-row-form {
   margin-bottom: 5px;
   width: 100%;
   display: flex;

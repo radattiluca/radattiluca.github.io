@@ -343,6 +343,38 @@
       </div>
     </div>
     
+    <div class="item-grid-5">
+      
+      <div class='row-header-form'>
+        <h1>Contact me</h1>
+      </div>
+      
+      <div class="row-form">
+        
+          <form id="form" class="contactme-form" onsubmit="return showMessage()">
+            <input type="hidden" name="contact_number">
+            <div class='item-row-form'>
+              <label for="user_name">Name</label>
+              <input name='user_name' type='text' id="user_name" placeholder='Enter your full name' required/>
+            </div>
+    
+            <div class='item-row-form'>
+              <label for="user_email">Email</label>
+              <input name='user_email' type='email' id="user_email" placeholder='youremail@example.com' required/>
+            </div>
+    
+            <div class='item-row-form'>
+              <label for="message">Message</label>
+              <textarea name='message' id="message" placeholder='Your Message' required></textarea>
+            </div>
+    
+            <div class='item-row-form'>
+              <input class="button-one" type="submit" id="submit" value="Send Message"> <!--to use the customization of the button text-->
+            </div>
+          </form>
+    
+    </div>
+    </div>
 
   </section>
 

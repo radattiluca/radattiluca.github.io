@@ -7,9 +7,15 @@
   min-height: 100%; //for compatibility with the browsers
   height: auto !important;
   height: 100%;
+  padding-bottom: 30px;
   margin: 0 auto -100px; //to make room for the footer who receives a push down equal to the height of the extra div
 }
 
+.contactme-form{
+  background-color: $color-pred-trasp;
+  padding: 10px 10px 15px 10px; 
+  border-radius: 10px;
+}
 
 .row-header-form {
   text-align: left;

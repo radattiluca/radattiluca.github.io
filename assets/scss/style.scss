@@ -90,10 +90,22 @@ body{
 
         p{
             font-size: 0.8em;
+            margin-top: 20px;
+            text-transform: none;
+            background-color: $color-link;
+            border-radius: 10px; 
+            padding: 10px;
         }
         h2{
             font-size: 1em;
+            text-align: center;
+            margin-bottom: 5px;
         }
+
+    .svg-about{
+        display: flex;
+        justify-content: end;
+    }   
 
     .row-skills{
         div{
@@ -112,7 +124,10 @@ body{
     
 }
 
-.grid-cv{
+    .item-grid-4{
+        background-color: $color-pred-trasp;
+    }
+    .grid-cv{
     display: grid;
     grid-template-columns: auto auto;
     margin: 10px;
@@ -190,7 +205,7 @@ body{
                 }
         }
         
-}
+    }
 
 .extra, .grid-footer{
     height: 100px; //to send the footer at the bottom of the page when the content is not enough
@@ -210,8 +225,8 @@ body{
        }
 
     svg{
-        width: 50px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
         fill: $color-pred;
         border-radius: 5px;
     }

@@ -112,6 +112,88 @@ body{
     
 }
 
+.grid-cv{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+    row-gap: 5px;
+    color: $color-pred;
+    font-size: 0.5em;
+    border: solid 2px $color-pred-trasp;
+        
+        img{
+            width: 100px;
+        }
+        svg{
+            width: 20px;
+            height: 15px;
+            fill: $color-pred;
+            border-radius: 5px;
+        }
+        li{
+            list-style-type: none;
+        }
+        h3{
+            margin: 10px 0 5px 0;
+        }
+
+        .row-name-cv{
+            font-size: 1.5em;
+            padding: 10px;
+            margin: auto;
+                h3{
+                    text-wrap: nowrap;
+                    margin: 0;
+                }
+
+                .button-download{
+                    padding: 3px 7px 3px 7px;
+                    background-color: $color-pred;
+                    font-size: 1em;
+                    font-weight: 700;
+                    border-radius: 25px;
+                    border: 1px solid $color-dark;
+                    color: $color-link;
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                }
+                #position-downloadCV{
+                    position: relative;
+                    top: -69px;
+                    right: -130px;
+                }
+        }
+
+        .row-imagecv-profile{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: $color-pred-trasp;
+        }
+        .row-exp{
+            padding: 10px;
+
+                p{
+                    margin-left: 4px;
+                    font-size: 0.8em;
+                }
+                li{
+                    font-weight: 700;
+                }
+        }
+
+        .row-personal-info{
+            padding: 10px;
+            background-color: $color-pred-trasp;
+
+                p{
+                    font-size: 0.8em;
+                }
+        }
+        
+}
+
+
+
 
   
 @import 'tablet';

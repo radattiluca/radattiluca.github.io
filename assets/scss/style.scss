@@ -67,7 +67,7 @@ body{
 .container-grid{
     display: grid;
     grid-template-columns: auto;
-    gap: 50px;
+    gap: 70px;
     .item-grid-1{
         text-align: center;
             
@@ -104,7 +104,7 @@ body{
 
     .svg-about{
         display: flex;
-        justify-content: end;
+        padding: 5px;
     }   
 
     .row-skills{
@@ -126,7 +126,12 @@ body{
 
     .item-grid-4{
         background-color: $color-pred-trasp;
+
+        .row-header-cv{
+            padding-top: 20px;
+        }
     }
+   
     .grid-cv{
     display: grid;
     grid-template-columns: auto auto;
@@ -135,6 +140,8 @@ body{
     color: $color-pred;
     font-size: 0.5em;
     border: solid 2px $color-pred-trasp;
+    height: 100px;
+    overflow: hidden;
         
         img{
             width: 100px;
@@ -151,7 +158,6 @@ body{
         h3{
             margin: 10px 0 5px 0;
         }
-
         .row-name-cv{
             font-size: 1.5em;
             padding: 10px;
@@ -206,6 +212,22 @@ body{
         }
         
     }
+    .row-arrows-more{
+        display: flex;
+        justify-content: center;
+
+            .arrows{
+                background-color: transparent;
+                border: none;
+                width: 30px;
+
+                    svg{
+                        position: relative;
+                        z-index: -1;
+                    }
+                
+            }
+     }
 
 .extra, .grid-footer{
     height: 100px; //to send the footer at the bottom of the page when the content is not enough

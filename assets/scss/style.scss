@@ -79,6 +79,38 @@ body{
    
 }
 
+.grid-about{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px;
+    gap: 20px;
+    color: $color-pred;
+    background-color: $color-pred-trasp;
+
+        p{
+            font-size: 0.8em;
+        }
+        h2{
+            font-size: 1em;
+        }
+
+    .row-skills{
+        div{
+            display: inline-block;
+            padding: 5px;
+            margin-top: 5px;
+            background-color: $color-pred;
+            font-size: 0.8em;
+            font-weight: 700;
+            border-radius: 5px;
+            border: 1px solid $color-dark;
+            color: $color-link;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+    }
+    
+}
+
 
   
 @import 'tablet';

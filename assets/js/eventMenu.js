@@ -16,6 +16,7 @@ if(widthClient < 800){
 dropdownBtn.addEventListener('click', function() {
     // Toggle della visibilità del menu
     dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    
 });
 
 // Chiudiamo il menu se si clicca al di fuori

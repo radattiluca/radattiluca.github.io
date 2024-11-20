@@ -31,39 +31,29 @@ paragrafi.forEach((paragrafo, index) => {
     }
 });
 
-// quando si vede si sovrappone alle altre grid
-const overFlowCv = document.querySelector('.row-arrows-more');
+
 const rotateArrows = document.querySelector('#svgArrows');
 const showCv = document.querySelector('.grid-cv');
-const upOverflow = document.querySelector('#btn-down');
+const downOverflow = document.querySelector('#btn-down');
 
-upOverflow.id = "btn-down";
-console.log(upOverflow.id);
+let isFirstClick = true; // Variabile che tiene traccia del comportamento del pulsante
 
 
-    overFlowCv.addEventListener('click', function(event) {
-
-        if (event.target.tagName === 'BUTTON') { 
-            if(event.target.id === "btn-down"){
-              showCv.style.overflow = "visible";
-              showCv.style.height = "auto";
-              rotateArrows.style.rotate = "180deg";
-              upOverflow.id = "btn-up";
-              console.log(upOverflow.id);
-            }
-        }else{
-            return;
-            }
-    });
-
-    document.addEventListener('click', function(event) {
-        if(event.target.tagName === 'BUTTON') { 
-            if(event.target.id === "btn-up"){
-                showCv.style.overflow = "hidden";
-                showCv.style.height = "100px";
-                upOverflow.id = "btn-down";
-                rotateArrows.style.rotate = "0deg";
-                console.log(upOverflow.id);
-            }
+    downOverflow.addEventListener('click', function(event) {
+        
+        if (isFirstClick) {
+        // Primo comportamento
+            showCv.style.overflow = "visible";
+            showCv.style.height = "auto";
+            rotateArrows.style.rotate = "180deg";
+            isFirstClick = false;  // Cambiamo lo stato per il prossimo clic
+        } else{
+            showCv.style.overflow = "hidden";
+            showCv.style.height = "100px";
+            rotateArrows.style.rotate = "0deg";
+            isFirstClick = true;  // Cambiamo lo stato per il prossimo clic
         }
+        
     });
+
+    

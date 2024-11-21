@@ -1,3 +1,4 @@
+'use strict';
 
         window.onload = function() {
             document.getElementById('form').addEventListener('submit', function(event) {

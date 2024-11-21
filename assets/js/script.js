@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Selezioniamo tutti gli elementi <p>
 const containerP = document.querySelector('.row-text-profile');
@@ -55,5 +55,3 @@ let isFirstClick = true; // Variabile che tiene traccia del comportamento del pu
         }
         
     });
-
-    

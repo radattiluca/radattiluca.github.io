@@ -1,6 +1,8 @@
 C'è da finire di aggiustare tutta la parte grafica del sito desktop
 
-mettere i collegamenti ai link del menù
+creare evento che chiuda il menù quando si clicca su un collegamento 
+
+togliere il bgColor del menu al click
 
 collegare la freccia che torna su a un nodo 
 
@@ -14,3 +16,4 @@ animazione al file per scaricare il curriculum
 
 animazione di quando scende il menu e l'overflow del cv
 
+cambiare il modo di visualizzazione del messaggio di conferma del form

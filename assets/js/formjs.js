@@ -1,7 +1,9 @@
 'use strict';
 
-        window.onload = function() {
-            document.getElementById('form').addEventListener('submit', function(event) {
+const form =  document.querySelector('#form');
+
+        document.onload = function() {
+            form.addEventListener('submit', function(event) {
                 event.preventDefault();
                 emailjs.sendForm('default_service', 'template_bnovvph', this)
                     .then(() => {

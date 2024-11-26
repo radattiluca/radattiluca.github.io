@@ -203,6 +203,12 @@
       margin-right: 70px;
       padding-right: 20px;
     }
+
+    .button-one:hover{
+        background-color: $color-dark;
+        padding-right: 15px; //to make the button lengthen laterally
+        padding-left: 15px; //to make the button lengthen laterally
+    }       //used because the scale property blurs the text
     //finish section form for desktop
 
     //start section cv

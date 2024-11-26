@@ -41,7 +41,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript" src="/assets/js/initemailjs.js"></script>
     <script type="text/javascript" src="/assets/js/formjs.js"></script>
-    <script src="/assets/js/sendmessage.js"></script>
 </head>
 <body tabindex="0">
   
@@ -199,7 +198,7 @@
           <h3>Front End Developer</h3>
 
           <div>
-            <a id="position-downloadCV" href="/cv/Curriculum Vitae Luca Radatti (FED).pdf" download=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#2c4751" d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM216 232l0 102.1 31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31L168 232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></a>
+            <a id="position-downloadCV" href="/cv/Curriculum Vitae Luca Radatti (FED).pdf" download="">Dowloand my CV<svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#2c4751" d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM216 232l0 102.1 31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31L168 232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></a>
           </div>
         </div>
   
@@ -355,7 +354,7 @@
       
       <div class="row-form">
         
-          <form id="form" class="contactme-form" onsubmit="return showMessage()">
+          <form id="myForm" class="contactme-form" onsubmit="return showMessage()">
             <input type="hidden" name="contact_number">
             <div class='item-row-form'>
               <label for="user_name">Name</label>
@@ -380,7 +379,7 @@
            <!--section for the error message-->
           <div class="alert" id="boxError">
             <button class="closebtn" id="close">&times;</button>
-            <div id="messageError"></div> 
+            <div id="messageSend"></div> 
           </div> 
   
     
@@ -419,7 +418,8 @@
 
 </footer>
 <script src="/assets/js/eventMenu.js"></script>
-<script src="/assets/js/script.js"></script>
-<script src="/assets/js/messageBox.js" async></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/sendmessage.js" async></script>
+<script src="/assets/js/resetForm.js" async></script>
 </body>
 </html>

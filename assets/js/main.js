@@ -3,8 +3,8 @@
 // Selezioniamo tutti gli elementi <p>
 const containerP = document.querySelector('.row-text-profile');
 const iconSpan = containerP.querySelectorAll('span');
-console.log(containerP);
-console.log(iconSpan);
+//console.log(containerP);
+//console.log(iconSpan);
 
 // Iteriamo su tutti gli elementi <p>
 iconSpan.forEach((span, index) => {
@@ -55,3 +55,13 @@ let isFirstClick = true; // Variabile che tiene traccia del comportamento del pu
         }
         
     });
+
+//evento per far chiudere il messaggio
+const closeMessage = document.querySelector('#close');
+
+closeMessage.addEventListener('click', function(event){
+    errorBox.hidden = true; //we set the error div to invisible
+});
+
+    
+   

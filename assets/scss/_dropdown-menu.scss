@@ -43,20 +43,20 @@
   }
   
   .dropdown-content li:hover {
-      background-color: #ddd;
+      background-color: $color-pred-trasp;
   }
   
   /* Il pulsante di dropdown */
   .dropdown-btn {
       background-color: $color-pred;
       color: $color-link;
-      padding: 5px;
+      padding: 20px 5px 5px 5px;
       border: none;
       cursor: pointer;
 
         svg{
-          width: 50px;
-          height: 40px;
+          width: 40px;
+          height: 30px;
           fill: $color-link;
         }
   }

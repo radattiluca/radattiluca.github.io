@@ -5,11 +5,13 @@ function showMessage() {
 
     if (isSubmittedSuccessfully) {
         // Show a success message
-        alert("Thank you for contacting me!");
+        errorBox.hidden = false;
+        messageError.innerHTML = messageSuccess;
         return true; // Allow form submission
     } else {
         // Show an error message if form submission failed
-        alert("Oops there must be a problem, try again!");
+        errorBox.hidden = false;
+        messageError.innerHTML = messageError;
         return false; // Prevent form submission
     }
 }

@@ -49,7 +49,7 @@ let isFirstClick = true; // Variabile che tiene traccia del comportamento del pu
             isFirstClick = false;  // Cambiamo lo stato per il prossimo clic
         } else{
             showCv.style.overflow = "hidden";
-            showCv.style.height = "100px";
+            showCv.style.height = "115px";
             rotateArrows.style.rotate = "0deg";
             isFirstClick = true;  // Cambiamo lo stato per il prossimo clic
         }

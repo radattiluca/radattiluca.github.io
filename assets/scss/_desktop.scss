@@ -1,266 +1,103 @@
 @media only screen and (min-width:961px){
 
-    %dropdownhoverdesktop{
-        display: flex;
-        flex-direction: row-reverse;
-        text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
-        position: absolute;  
-        top: -15px;
-        left: -300px;
-    }
-    %dropdownlidesktop{
-        list-style: none;
-        border: none;
-        font-size: 1em;
-        padding: 15px;
-        margin: 0;
-        text-align: center;
-        font-weight: 700;
+    .grid-nav{
+        height: 100px;
 
-        a{
-            &:hover{
-                font-size: 110%;
+            .row-my-logo{
+                img{
+                    width: 150px;
+                }
             }
-        }
-    }
-    
-    body{
-        font-family: $font-style;
-        max-width: 1440px;
-        line-height: 1.6;
-        font-size: 18px;
-        text-transform: capitalize; 
-        margin:0 auto;
-        position: relative;
-    }
-       
-    .navbar{
-        position: fixed;
-        display: flex;
-        max-width: 1440px;
-        height: 80px;
-        justify-content: space-between;
-        padding: 10px 20px 20px 20px;
-        top: 0;
-    
-            li{
-                list-style-type: none;
+
+            .row-logo{
+                top: 120px;
+                left: 10px;
+                    svg{
+                        width: 70px;
+                        height: 40px;
+                    }
+            }
+
+            .dropdown-content{
+                min-height: 80px;
+                min-width: 400px;
+                right: 70px;
+                top: 10px;
+                align-items: center;
+                background-color: $color-pred;
+                box-shadow: none;
+                
+                li{
+                    font-size: 1em;
+                }
+            }
+            .dropdown-btn{
+                svg{
+                    width: 70px;
+                    height: 40px;
+                }
             }
     }
 
-    .logo-name{
-            img{
-                height: 70px;
-            }
+    .item-grid-2{
+        background-color: $color-pred-trasp;
+        .grid-about{
+           width: 85%;
+           margin: auto;
+           font-size: 1.5em;
+           background-color: transparent;
+        }
+
+        .row-skills{
+            margin: auto;
+        }
     }
 
-    .navigation-otherpg{
-        margin-top: 20px;
-    }
-
-        //start navbar and dropdown menu first page
-        .dropdown:hover 
-        .item-menu{
-            @extend %dropdownhoverdesktop;
-            background-color: $color-link;
-         
-        }
- 
-        .item-menu{ 
-         
-             li{
-                 @extend %dropdownlidesktop;
-             }
-             a{
-                 color: $color-pred;
-                 }
-        }
-        //end navbar and dropdown menu first page
+    .item-grid-4{
         
-        //start navbar and dropdown menu other pages
-        .dropdown-otherpg:hover 
-        .item-menu-otherpg{
-            @extend %dropdownhoverdesktop;
-            background-color: $color-pred;
-        
-        }
+        .grid-cv{
+            width: 80%;
+            margin: auto;
+            grid-template-columns: 40% auto;
+            font-size: 1.5em;
+            min-height: 300px;
+            gap: 20px;
 
-        .item-menu-otherpg{ 
-        
-            li{
-                @extend %dropdownlidesktop;
+            .row-imagecv-profile{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .row-name-cv{
+                
+                margin: 10px 0 0 10px;
+                
+
+                #position-downloadCV{
+                    left: 5px;
+                    top: 20px;
+
+                        svg{
+                            width: 60px;
+                            height: 40px;
+                        }
+                }
+            }
+
+            .row-personal-info{
+                padding: 20px;
+
+                    svg{
+                        width: 50px;
+                        height: 30px;
+                    }
             }
         }
-        //end navbar and dropdown menu other pages
-       
-
-    .column-firstpage{
-        margin-top: 60px;
-        background-color: $color-link;
-    }
-
-    //section about start
-
-    .column-about{
-        grid-template-columns: 1fr;
-        gap: 10px;
-        justify-items: center;
-        align-items: center;
-        background-color: $color-link;
-
-        .button-one{
-            margin-top: 10px;
-            text-decoration: none;
-        }
-
     }
    
-    .row-skills{
-        text-align: left;
 
-        .button-one:hover{
-            background-color: $color-pred;
-            padding: 10px; //to cancel the effect given to the buttons
-            cursor:default; //to cancel the pointer cursor
-        }
-       
-    }
-    .row-text-profile{
-       font-size: 1.2em;
-       padding: 20px;
-       background-color: $color-pred-trasp;
-    }
-    //section about finish
-
-
-    .column-cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 20px 0 30px 0;
-        color: $color-pred;
-        row-gap: 40px;
-        padding: 0 0 40px 0;
-
-        .card{
-            .container{
-                font-size: 0.9em;
-            }
-        }
-    }
-
-    
-
-    //start section form for desktop
-
-    .column-form{
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-top: -90px;
-    }
    
-    .row-header-form{
-        text-align: center;
-    }
-
-    .row-form{
-        display: flex;
-        justify-content: center;
-    }
-
-    .contactme-form {
-        width: 70%;
-        background-color: $color-pred-trasp;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 50px 20px 0 20px;
-        box-sizing: content-box;
-    }
-    
-    .item-row {
-      flex-direction: row;
-      margin-bottom: 20px;
-      justify-content: center;
-      margin-left: 0;
-      padding-left: 0;
-    }
-
-    .item-row input[type='text'],
-    .item-row input[type='email'],
-    .item-row textarea {           
-      min-width: 400px;
-      height: initial;
-    }
-
-    textarea{
-        resize: vertical;
-    }
-
-    .item-row label {
-      text-align: right;
-      width: 20px;
-      margin-top: 7px;
-      margin-right: 70px;
-      padding-right: 20px;
-    }
-
-    .button-one:hover{
-        background-color: $color-dark;
-        padding-right: 15px; //to make the button lengthen laterally
-        padding-left: 15px; //to make the button lengthen laterally
-    }       //used because the scale property blurs the text
-    //finish section form for desktop
-
-    //start section cv
-    .column-cv{
-        grid-template-columns: 400px 1fr;
-        gap: 5px;
-        margin: 5px 10px 0 10px;
-
-            .button-ct{
-                grid-column: 2/3;
-                justify-content: space-around;
-            }
-    }
-
-    .row-imagecv-profile{
-        max-width: 600px;
-        background-color: $color-pred-trasp;
-        grid-row: 1/2;
-
-            img{
-                width: 100%;
-            }
-    }
-
-    .row-exp{
-        h3:first-of-type{
-            padding-top: 0;
-        }
-    }
-
-    .row-personal-info{
-        grid-row: 2/4;
-    }
-
-    .row-name-cv{
-       text-align: left;
-       font-size: 2em;
-       background-color: $color-link;
-       padding-left: 30px;
-    }
-    //finish section cv
-
-    .column-footer{
-        display: flex;
-        flex-direction: row;
-        padding: 20px 40px 10px 20px;
-        justify-content: space-between;
-        color: $color-pred
-        ;
-        background-color: $color-pred-trasp;
-      }
-    
     //start custom scrollbar
     ::-webkit-scrollbar {
         width: 8px;
@@ -281,9 +118,16 @@
     }
     //finish custom scrollbar 
     
-    .arrow-back-up:hover{
-        font-size: 150%; 
+    .arrow-back-up{
+        svg{
+            height: 50px;
+            opacity: 0.5;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
     }
+        
 }
 
 

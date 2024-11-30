@@ -40,7 +40,7 @@ let isFirstClick = true; // Variabile che tiene traccia del comportamento del pu
 
 
     downOverflow.addEventListener('click', function(event) {
-        
+        // qui posso creare una nuova classe e andarla semplicemente a cambiare quando avviene il click
         if (isFirstClick) {
         // Primo comportamento
             showCv.style.overflow = "visible";
@@ -64,4 +64,3 @@ closeMessage.addEventListener('click', function(event){
 });
 
     
-   

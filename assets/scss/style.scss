@@ -3,6 +3,7 @@
 @import 'form';
 @import 'cards';
 @import 'dropdown-menu';
+@import 'errorBox';
 //mobile
 
 
@@ -25,295 +26,237 @@ body{
   
       a{
        color: $color-link; //change color link
+       text-decoration: none;
       }
+      h1{
+        text-align: center;
+        text-transform: none;
+        color: $color-pred;
+    }
   }
 
-//start navbar style first page
-.grid-logo{
+.grid-nav{
     display: grid;
-    grid-template-columns: 40px 40px 40px;
-}
-
-.item-logo{
-    padding-top: 20px;
-    padding-left: 10px;
-}
-
-svg{
-    width: 40px;
-    height: 30px;
-    fill: $color-pred;
-    border-radius: 5px;
-}
-//end style navbar first page
-
-//start style navbar other page
-.navbar{
-    position: fixed;
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
-    padding: 10px 30px 15px 0px;
-    top: 0;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     background-color: $color-pred;
-
-    li{
-        list-style-type: none;
-    }
-}
-
-.logo-name{
-    display: flex;
-        
-        a{
-            text-decoration: none;
-            height: 40px;
-        }
-        img{
-            margin-left: 10px;
-            height: 50px;
-        }
-       
-}
-//end style navbar other page
-
-//start style body first page
-.column-firstpage{
-    margin:100px 15px 30px 15px;
-    padding: 50px 20px 50px 20px;
-    background-color: $color-pred-trasp;
-    display: flex;
-    flex-direction: column;
-    }
-
-
-.row-name-firstpg{
-    text-align: center;
-   img{
     width: 100%;
-    max-width: 400px;
-   }
-}
-//end style body first page
+    min-height: 80px;
+    padding: 5px;
+    position: fixed;
+    z-index: 3;
+    
+    .row-my-logo{
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        img{
+            width: 100px;
+        }
+    }
+    .row-logo{
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        top: 88px;
+        left: 5px;
+        flex-direction: column;
+        align-items: end;
+        padding: 8px 3px 3px 3px;
+        border-radius: 5px;
+        background-color: $color-pred-trasp;
 
-//start style section about
-.column-about{
+        svg{
+            width: 40px;
+            height: 30px;
+            fill: $color-pred;
+            border-radius: 5px;
+        }
+    }
+
+    .row-menu{
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    
+}
+
+.container-grid{
     display: grid;
     grid-template-columns: auto;
-    margin-top: 60px;
-    color: $color-pred
-    ;
+    gap: 70px;
+    .item-grid-1{
+        text-align: center;
+            
+            img{
+                margin-top: 120px;
+                width: 100%;
+                max-width: 400px;
+            }
+    }
+   
+}
 
-        img{
-            border: 2px solid $color-pred;
-        }
+.grid-about{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px;
+    gap: 20px;
+    color: $color-pred;
+    background-color: $color-pred-trasp;
 
         p{
             font-size: 0.8em;
+            margin-top: 20px;
             text-transform: none;
+            background-color: $color-link;
+            border-radius: 10px; 
+            padding: 10px;
         }
-
-        h1{
-            text-align: center;
-            text-transform: none;
-            font-size: 1.2em;
-            padding: 10px 0 20px 0;
-
-        }
-}
-
-.row-image-profile {
-    width: 100%;
-    padding: 20px 70px 10px 70px;
-
-    img{
-        width: 100%;
-    }
-} 
-
-.row-text-profile {
-    text-align: left;
-    width: 100%;
-    padding: 0 30px 30px 30px;
-    background-color: $color-pred-trasp;
-} 
-
-.row-skills{
-    text-align: left;
-    width: 100%;
-    padding: 20px 20px 20px 20px;
-
-        .button-one{
-            background-color: $color-pred;
-            padding: 10px; //to cancel the effect given to the buttons
-            cursor:default; //to cancel the pointer cursor
-        }
-}
-
-.row-button{
-    text-align: left;
-    width: 100%;
-    padding: 20px 20px 20px 20px;
-    background-color: $color-pred-trasp;        
-}
-
-.button-ct{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 15px 0 15px 0;
-    flex-wrap: wrap;
-
-    a{
-        text-decoration: none;
-    }
-}
-//end style section about
-
-.button-contactme{
-    padding: 10px 0 10px 0;
-}
-
-//start section mobile cv
-.column-cv{
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 60px;
-    font-size: 0.8em;
-    
-        h3{
-            color: $color-pred;
-        }
-        svg{
-            fill:$color-pred
-            ;
-            width: 20px;
-            margin: 0 5px 0 5px;
-        }
-        .button-one{
-            margin-left: 10px; //for separeted the buttons in the cv
-        }
-}
-
-.row-name-cv{
-    text-align: center;
-    width: 100%;
-    color: $color-pred;
-    padding: 30px 10px 10px 10px;
-    background-color: $color-pred-trasp;
-
-        h1{
-            font-size: 2.5em;
-        }
-        h2{
+       /* h2{
             font-size: 1em;
-        }
-    
-}
+            text-align: center;
+            margin-bottom: 5px;
+        }*/
 
-.row-imagecv-profile{
-    display: flex;
-    justify-content: center;
-    padding: 20px 70px 20px 70px;
+    .svg-about{
+        display: flex;
+        padding: 5px;
+    }   
 
-    img{
-        border: 2px solid $color-pred;
-        width: 200px;
-    }
-}
-
-.row-personal-info{
-    background-color: $color-pred-trasp;
-    box-sizing: content-box;
-    
-    
-        li{
-            list-style-type: none;
-            color: $color-pred;
-            margin-left: 5px;
-
-                &:first-of-type{
-                    margin-top: 10px;
-                }
-        }
+    .row-skills{
         div{
-            padding: 10px 30px 20px 30px;
-            
+            display: inline-block;
+            padding: 5px;
+            margin-top: 5px;
+            background-color: $color-pred;
+            font-size: 0.8em;
+            font-weight: 700;
+            border-radius: 5px;
+            border: 1px solid $color-dark;
+            color: $color-link;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
-        p{
-            text-transform: none;
-            color: $color-pred;
-            margin-top: 10px;
-        }
-
-        h3{
-            color: $color-pred;
-        }
-        a{
-            color: $color-pred;
-            text-transform: none;
-            text-decoration: none;
-        }
-
-        .item-logo{
-            padding: 20px 0 0 0;
-        }
+    }
     
 }
 
-.row-exp{
-    background-color: $color-link;
-    padding: 10px 30px 10px 30px ;
+    .item-grid-4{
+        background-color: $color-pred-trasp;
 
-        h3{
-            color: $color-pred;
+        .row-header-cv{
             padding-top: 20px;
         }
-        h4{
-            padding: 20px 0 5px 0;
+    }
+   
+    .grid-cv{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+    row-gap: 5px;
+    color: $color-pred;
+    font-size: 0.5em;
+    border: solid 2px $color-pred-trasp;
+    height: 115px;
+    overflow: hidden;
+    
+        
+        img{
+            width: 100px;
         }
-        ul{
-            margin: 10px 0 0 30px;
-        }
-        div{
-            font-size: 1em;
-            color: $color-pred;
-            padding-bottom: 20px;
+        svg{
+            width: 20px;
+            height: 15px;
+            fill: $color-pred;
+            border-radius: 5px;
         }
         li{
-            margin-top: 5px;
+            list-style-type: none;
         }
-        a{
-            color: $color-light;
-            text-transform: none;
-            text-decoration: none;
+        h3{
+            margin: 10px 0 5px 0;
         }
-        #competenze{
-            li{
-                font-weight: 700;
-            }
-            p{
-                text-transform: none;
-            }
-        }
-    
-}
-//end section cv mobile
-.card{
-    .container{
-        font-size: 0.7em;
+        .row-name-cv{
+            font-size: 1.5em;
+            padding: 10px;
+            margin: auto;
+                h3{
+                    text-wrap: nowrap;
+                    margin: 0;
+                }
 
-            p{
-                text-transform: none;
-            }
+                a{
+                    color: $color-pred;
+                    font-size: 0.5em;
+                }
+                .button-download{
+                    padding: 3px 7px 3px 7px;
+                    background-color: $color-pred;
+                    font-size: 1em;
+                    font-weight: 700;
+                    border-radius: 25px;
+                    border: 1px solid $color-dark;
+                    color: $color-link;
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                }
+                #position-downloadCV{
+                    position: relative;
+                    top: 10px;
+                    left: 0px;
+                }
+        }
+
+        .row-imagecv-profile{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: $color-pred-trasp;
+        }
+        .row-exp{
+            padding: 10px;
+
+                p{
+                    margin-left: 4px;
+                    font-size: 0.8em;
+                }
+                li{
+                    font-weight: 700;
+                }
+        }
+
+        .row-personal-info{
+            padding: 10px;
+            background-color: $color-pred-trasp;
+
+                p{
+                    font-size: 0.8em;
+                }
+        }
+        
     }
-}
+    .row-arrows-more{
+        display: flex;
+        justify-content: center;
 
-.extra, .column-footer{
+            .arrows{
+                background-color: transparent;
+                border: none;
+                width: 30px;
+
+                    svg{
+                        position: relative;
+                        z-index: -1;
+                    }
+                
+            }
+     }
+
+.extra, .grid-footer{
     height: 100px; //to send the footer at the bottom of the page when the content is not enough
 }
 
-.column-footer{
+.grid-footer{
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -325,6 +268,13 @@ svg{
     a{
         text-decoration: none; 
        }
+
+    svg{
+        width: 40px;
+        height: 30px;
+        fill: $color-pred;
+        border-radius: 5px;
+    }
   }
   
 .arrow-back-up{
@@ -333,6 +283,8 @@ svg{
     bottom: 1px;
     right: 2px;
 }
+
+
 
 
   

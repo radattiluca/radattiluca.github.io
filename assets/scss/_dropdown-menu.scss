@@ -1,115 +1,62 @@
     
-    %dropdownhover{
-      display: flex;
-      flex-direction: column;
-      text-shadow: 6px 2px 4px rgba(44, 71, 81, 0.46);
-      padding-top: 10px;
-      position: absolute;  
-      left: -15px;
-      z-index: 1;
-      background-color: $color-light;
-    }
-
-    %dropdownli{
-      list-style: none;
-      border-bottom: 1px dotted $color-primary;
-      font-size: 0.8em;
-      padding: 0 5px 10px 5px;
-      margin: 5px;
-      text-align: center;
-      font-weight: 700;
-
-      a:link,
-      a:visited {
-        text-decoration: none;
-  
-          &:active{
-            color: $color-primary;
-          }
-      }
-    }
-
-    %dropmove{
-      position: relative;
-
-      span{
-          z-index: 2;
-          position: relative; 
-          cursor: pointer;
-          left: 0;
-          animation-name: dropmove;
-          animation-iteration-count: 3;
-          animation-duration: 1.5s;
-      }
-      @keyframes dropmove {
-          0%   {left:0px; top:0px;}  
-          25%  {left:0px; top:0px;}
-          50%  {left:0px; top:10px;}
-          75%  {left:0px; top:10px;}
-          100% {left:0px; top:0px;}
-        }
-    }
-
-    %nav{
-      justify-content: center;
-      display: flex;
-      font-size: 0.8em;
+    .dropdown-content {
+      display: none; /* Nascondiamo il menu per impostazione predefinita */
       position: absolute;
-      right: 20px;
+      background-color: $color-light;
+      min-width: 310px;
+      min-height: 300px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      top: 75px;
+      right: -5px;
+      z-index: 1;
+  }
 
-      li{
-        list-style-type: none;
-    }
-    }
+  .dropdown-content ul{
+      list-style-type:none;
+  }
 
-//start navbar and dropdown menu first page
-.dropdown:hover .item-menu{
-  @extend %dropdownhover;
-  border-radius: 5px;
-  top: 40px;
-}
-
-.item-menu{
-  display: none;
-    li{
-      @extend %dropdownli;
-    }
-    
-}
-
-.navigation{
-  @extend %nav;
-  margin-top: 20px;
-  top: 0;
-}
-
-.dropdown{ //to insert properties for animation
-  @extend %dropmove;
-}
-//end navbar and dropdown menu first page
-
-//start navbar and dropdown menu other pages
-.dropdown-otherpg:hover 
-.item-menu-otherpg{
-  @extend %dropdownhover;
-  border-radius: 0 0 5px 5px ;
-  top: 44px;   
-}
-    
-.item-menu-otherpg{
-  display: none;
-    li{
-      @extend %dropdownli;
+  .dropdown-content li {
+      padding: 8px 16px;
+      border-bottom: 1px dotted $color-pred;
+      font-size: 1.5em;
+      margin: 5px;
+      font-weight: 700;
+      list-style-type: none;
+      text-align: center;
+      
+        .row-logo{
+          justify-content: center;
+        }
+        svg{
+          width: 40px;
+          height: 30px;
+          fill: $color-link;
+          border-radius: 5px;
       }
-}
-    
-.navigation-otherpg{
-  @extend %nav;
-  margin-top: 10px;
-  top: 10px;
-}
-    
-.dropdown-otherpg{
-  @extend %dropmove;
-}
-//end navbar and dropdown menu other pages
+  }
+  
+  .dropdown-content li a {
+      text-decoration: none;
+      color: $color-link;
+      display: block;
+  }
+  
+  .dropdown-content li:hover {
+      background-color: $color-pred-trasp;
+  }
+  
+  /* Il pulsante di dropdown */
+  .dropdown-btn {
+      background-color: $color-pred;
+      color: $color-link;
+      padding: 20px 5px 5px 5px;
+      border: none;
+      cursor: pointer;
+
+        svg{
+          width: 40px;
+          height: 30px;
+          fill: $color-link;
+        }
+  }
+  

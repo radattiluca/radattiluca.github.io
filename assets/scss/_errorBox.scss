@@ -1,0 +1,28 @@
+.alert {
+    padding: 20px;
+    width: 220px;
+    background-color: $color-light;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    top: 5px;
+    z-index: 2;
+  }
+  
+  .closebtn {
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+    color: $color-link;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: red;
+  }
